@@ -1,3 +1,6 @@
+
 <div class="page-header container-fluid">
-  <h1>JDB Enterprises <small>This site has everything you don't need!</small></h1>
+	<br>
+	<br>
+  <h1><img id="logo" src="img/jdb_logo.jpg">JDB Productions<br> <small>This site has everything you don't need!</small></h1>
 </div>
