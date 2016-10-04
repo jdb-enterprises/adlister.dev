@@ -17,7 +17,9 @@
 		<?php require '../views/partials/header.php'; ?>
 		<?php require '../views/partials/navbar.php'; ?>
 
-    	<?php require $main_view; ?>
+    	<!-- <?php //require $main_view; ?> -->
+
+    	<?php require '../views/partials/footer.php'; ?>
 
     	<?php require '../views/partials/common_js.php'; ?>
 
