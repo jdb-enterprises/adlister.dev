@@ -5,19 +5,20 @@ require_once __DIR__ . '/Model.php';
 class Items extends Model 
 {
 	// ARRAY TO STORE 
-	protected $items = array();
+	protected $item = array();
 	// FUNCTION TO INSERT A NEW ITEM INTO THE ITEMS TABLE 
 	protected function insert() 
 	{
-		$query = 'INSERT INTO items (id, price, name, description) VALUES (:id, :price, :name, :description)';
+		$query = 'INSERT INTO item (price, name, description) VALUES (:price, :name, :description)';
 		
-		$stmt->bindValue(':id', $this->items['id'], PDO::PARAM_STR);
-        $stmt->bindValue(':price', $this->items['price'], PDO::PARAM_STR);
-        $stmt->bindValue(':name', $this->items['name'], PDO::PARAM_STR);
-        $stmt->bindValue(':description', $this->items['description']), PDO::PARAM_STR);
+		$stmt = self::$dbc->prepare($query);
+
+        $stmt->bindValue(':price', $this->item['price'], PDO::PARAM_STR);
+        $stmt->bindValue(':name', $this->item['name'], PDO::PARAM_STR);
+        $stmt->bindValue(':description', $this->item['description'], PDO::PARAM_STR);
         $stmt->execute();
 
-        $this->items['id'] = self::$dbc->lastInsertID();
+        $this->item['id'] = self::$dbc->lastInsertID();
 	}
 
 }
