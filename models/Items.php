@@ -2,26 +2,17 @@
 
 require_once __DIR__ . '/Model.php';
 
-class Items extends Model 
+class Item extends Model 
 {
-	// ARRAY TO STORE 
-	protected $item = array();
-	// FUNCTION TO INSERT A NEW ITEM INTO THE ITEMS TABLE 
-	protected function insert() 
-	{
-		$query = 'INSERT INTO item (price, name, description) VALUES (:price, :name, :description)';
-		
-		$stmt = self::$dbc->prepare($query);
+    
+ protected static $table = 'items';
 
-        $stmt->bindValue(':price', $this->item['price'], PDO::PARAM_STR);
-        $stmt->bindValue(':name', $this->item['name'], PDO::PARAM_STR);
-        $stmt->bindValue(':description', $this->item['description'], PDO::PARAM_STR);
-        $stmt->execute();
+    // checks if the attribute being saved is password and hashes it if so
+    public function __set($name, $value)
+    {
 
-        $this->item['id'] = self::$dbc->lastInsertID();
-	}
+        parent::__set($name, $value);
+    }
+
 
 }
-
-
- ?>
