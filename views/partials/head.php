@@ -14,4 +14,5 @@
 <meta name="twitter:card" content="summary" />
 
 <!-- Bootstrap Core CSS CDN-->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
