@@ -7,5 +7,5 @@ return array(
     'DB_USER' => 'adlister_user',
     'DB_PASS' => 'password',
 
-    'USER_PASS' => '',
+    'USER_PASS' => 'password',
 );
