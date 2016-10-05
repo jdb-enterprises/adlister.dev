@@ -10,6 +10,7 @@ function pageController()
 
     // finds position for ? in url so we can look at the url minus the get variables
     $get_pos = strpos($_SERVER['REQUEST_URI'], '?');
+    
 
     // if a ? was found, cuts off get variables if not just gives full url
     if ($get_pos !== false)
@@ -18,7 +19,6 @@ function pageController()
     }
     else
     {
-        $main_view = '../views/ads/index.php';
         $request = $_SERVER['REQUEST_URI'];
     }
 
@@ -26,6 +26,9 @@ function pageController()
     // switch that will run functions and setup variables dependent on what route was accessed
     
     switch ($request) {
+        case '/' :
+            $main_view = '../views/ads/index.php';
+            break;
         case '/index.php/login' :
             $main_view = '../views/users/login.php';
             break;
