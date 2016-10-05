@@ -29,10 +29,10 @@ function pageController()
         case '/' :
             $main_view = '../views/ads/index.php';
             break;
-        case '/index.php/login' :
+        case '/login' :
             $main_view = '../views/users/login.php';
             break;
-        case '/index.php/signup' :
+        case '/signup' :
             $main_view = '../views/users/signup.php';
             break;
         default:    // displays 404 if route not specified above
