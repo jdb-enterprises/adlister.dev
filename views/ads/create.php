@@ -1,42 +1,52 @@
 <!--Page for creating new advertisement listings-->
 
-<div class="container">
-      <div class="panel panel-default">
-        <div class="panel-heading"><strong>Upload Files</strong> <small>Bootstrap files upload</small></div>
-        <div class="panel-body">
+<form class="form-horizontal">
+<fieldset>
 
-          <!-- Standar Form -->
-          <h4>Select files from your computer</h4>
-          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
-            <div class="form-inline">
-              <div class="form-group">
-                <input type="file" name="files[]" id="js-upload-files" multiple>
-              </div>
-              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
-            </div>
-          </form>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-5">
+  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
+    
+  </div>
+</div>
 
-          <!-- Drop Zone -->
-          <h4>Or drag and drop files below</h4>
-          <div class="upload-drop-zone" id="drop-zone">
-            Just drag and drop files here
-          </div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Price</label>  
+  <div class="col-md-5">
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input id="price" name="price" type="text" class="form-control input-md">
+    </div>
+  </div>
+</div>
 
-          <!-- Progress Bar -->
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              <span class="sr-only">60% Complete</span>
-            </div>
-          </div>
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Description</label>
+  <div class="col-md-5">                     
+    <textarea class="form-control" id="description" name="description" placeholder="Description of item"></textarea>
+  </div>
+</div>
 
-          <!-- Upload Finished -->
-          <div class="js-upload-finished">
-            <h3>Processed files</h3>
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
-              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-02.jpg</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- /container -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Upload</label>
+  <div class="col-md-5">                     
+     <input type="file" name="pic" accept="image/*">
+
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+    <div class="col-md-5">                     
+      <input type="submit">
+    </div>
+</div>
+
+
+
+</fieldset>
+</form>
