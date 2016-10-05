@@ -46,7 +46,7 @@
             <li><a href="/create" type="GET">Create Ad</a></li>
             <li><a href="/edit_ad" type="GET">Edit Ad</a></li>
             <li><a href="/edit_user" type="GET">Profile</a></li>
-            <li><a href="/users/logout.php" type="GET">Logout</a></li>
+            <li><a href="/logout" type="GET">Logout</a></li>
           <!--   <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li> -->
           </ul>
