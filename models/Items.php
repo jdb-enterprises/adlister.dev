@@ -10,10 +10,10 @@ class Item extends Model
     // checks if the attribute being saved is password and hashes it if so
     public function __set($name, $value)
     {
-
         parent::__set($name, $value);
     }
- public static function searchItems($name)
+
+	public static function searchItems($name)
     {
 
     	self::dbConnect();
@@ -21,7 +21,7 @@ class Item extends Model
     	$query = 'SELECT * FROM ' . self::$table . " WHERE name LIKE :name";
 
     	$stmt = self::$dbc->prepare($query);
-        $stmt->bindValue(':name', $name . '%', PDO::PARAM_STR);
+        $stmt->bindValue(':name', '%' . $name . '%', PDO::PARAM_STR);
         $stmt->execute();
 
         //Store the resultset in a variable named $result
@@ -44,4 +44,3 @@ class Item extends Model
 }
 
 
-var_dump(Item::searchItems('Bacon'));

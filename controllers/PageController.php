@@ -10,7 +10,15 @@ function pageController()
 
     // finds position for ? in url so we can look at the url minus the get variables
     $get_pos = strpos($_SERVER['REQUEST_URI'], '?');
-    
+
+    if(!empty($_POST)) {
+
+        $username = Input::get('username');
+        $password = Input::get('password');
+
+        $message = Auth::attempt($username, $password);
+        
+    };
 
     // if a ? was found, cuts off get variables if not just gives full url
     if ($get_pos !== false)
@@ -22,7 +30,6 @@ function pageController()
         $request = $_SERVER['REQUEST_URI'];
     }
 
-    var_dump($request);
     // switch that will run functions and setup variables dependent on what route was accessed
     
     switch ($request) {
@@ -58,4 +65,3 @@ function pageController()
 }
 
 extract(pageController());
-var_dump($main_view);
