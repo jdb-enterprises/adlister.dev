@@ -34,5 +34,5 @@ $item = new Item;
 $item->price = '10.99';
 $item->name = "Instant Mullet Headband";
 $item->description = "Let your Hair blow in the wind as you roll down the highway in your Harley. This Mullet is an instant fix for anyone with Hair issues or in serious need of a cool new 'do. Get ready to rock the red, white, and blue Headband like a rockstar. It's a stretchable cotton Headband with brown curly locks in back.";
-$item->image = "instantMullet.jpg";
+$item->image = "/img/instantMullet.jpg";
 $item->save();
