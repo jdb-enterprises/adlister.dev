@@ -21,21 +21,22 @@ function pageController()
         $main_view = '../views/ads/index.php';
         $request = $_SERVER['REQUEST_URI'];
     }
-    // var_dump($request);
+
+    var_dump($request);
     // switch that will run functions and setup variables dependent on what route was accessed
-    if(isset($_GET['page'])){
-        switch ($_GET['page']) {
-            case 'login' :
-                $main_view = '../views/users/login.php';
-                break;
-            case 'signup' :
-                $main_view = '../views/users/signup.php';
-                break;
-            default:    // displays 404 if route not specified above
-                $main_view = '../views/404.php';
-                break;
-        }
+    
+    switch ($request) {
+        case '/index.php/login' :
+            $main_view = '../views/users/login.php';
+            break;
+        case '/index.php/signup' :
+            $main_view = '../views/users/signup.php';
+            break;
+        default:    // displays 404 if route not specified above
+            $main_view = '../views/404.php';
+            break;
     }
+
     $data['main_view'] = $main_view;
 
     return $data;
