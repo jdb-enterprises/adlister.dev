@@ -44,6 +44,9 @@ function pageController()
         case '/edit_user' : 
             $main_view = '../views/users/edit.php';
             break;
+        case '/show' :
+            $main_view = '../views/ads/show.php';
+            break;
         default:    // displays 404 if route not specified above
             $main_view = '../views/404.php';
             break;
