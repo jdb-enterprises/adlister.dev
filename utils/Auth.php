@@ -39,7 +39,7 @@ class Auth
 
 			return true;
 		}
-		var_dump(expression)
+	
 
 		$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect';
 		return false;
