@@ -17,7 +17,7 @@ function pageController()
         $password = Input::get('password');
 
         $message = Auth::attempt($username, $password);
-        
+
     };
 
     // if a ? was found, cuts off get variables if not just gives full url
@@ -53,6 +53,10 @@ function pageController()
             break;
         case '/show' :
             $main_view = '../views/ads/show.php';
+            break;
+        case '/logout' :
+            Auth::logout();
+            $main_view = '../views/home.php';
             break;
         default:    // displays 404 if route not specified above
             $main_view = '../views/404.php';

@@ -39,7 +39,7 @@ class Auth
 
 			return true;
 		}
-	
+
 
 		$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect';
 		return false;
@@ -89,6 +89,12 @@ class Auth
 	    session_regenerate_id(true);
 
 	    return true;
+	}
+	
+	public static function redirect($url)
+	{
+		header("Location: $url");
+		die();
 	}
 }
 
