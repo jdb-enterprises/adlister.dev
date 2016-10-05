@@ -30,9 +30,6 @@ function pageController()
         $request = $_SERVER['REQUEST_URI'];
     }
 
-    if(isset($_SESSION['IS_LOGGED_IN'])){
-        $request = '/';
-    }
     // switch that will run functions and setup variables dependent on what route was accessed
     
     switch ($request) {
