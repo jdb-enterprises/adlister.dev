@@ -32,7 +32,6 @@
                                 </div>
                                 <div class="item">
                                     <img class="slide-image" src="/img/instantMullet.jpg" alt="">
-                                asdfesaf
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
