@@ -14,23 +14,26 @@ function pageController()
     // if a ? was found, cuts off get variables if not just gives full url
     if ($get_pos !== false)
     {
+        if($_GET['page'] == 'login') {
+            $main_view = '../views/users/login.php';
+        }
 
         $request = substr($_SERVER['REQUEST_URI'], 0, $get_pos);
     }
     else
     {
-
+        $main_view = '../views/ads/index.php';
         $request = $_SERVER['REQUEST_URI'];
     }
 
     // switch that will run functions and setup variables dependent on what route was accessed
-    switch ($request) {
+    // switch ($request) {
 
 
-        default:    // displays 404 if route not specified above
-            $main_view = '../views/404.php';
-            break;
-    }
+    //     default:    // displays 404 if route not specified above
+    //         $main_view = '../views/404.php';
+    //         break;
+    // }
 
     $data['main_view'] = $main_view;
 
@@ -38,3 +41,4 @@ function pageController()
 }
 
 extract(pageController());
+var_dump($main_view);
