@@ -90,12 +90,8 @@ class Auth
 
 	    return true;
 	}
+
 	
-	public static function redirect($url)
-	{
-		header("Location: $url");
-		die();
-	}
 }
 
 ?>
