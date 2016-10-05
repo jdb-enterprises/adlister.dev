@@ -40,7 +40,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/login" type="GET">Login</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=isset($_SESSION['IS_LOGGED_IN'])? $_SESSION['IS_LOGGED_IN']: 'Options';?><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/signup" type="GET">Sign Up</a></li>
             <li><a href="/create" type="GET">Create Ad</a></li>
