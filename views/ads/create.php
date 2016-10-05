@@ -7,7 +7,7 @@
 
           <!-- Standar Form -->
           <h4>Select files from your computer</h4>
-          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+          <form action="/img/" method="post" enctype="multipart/form-data" id="js-upload-form">
             <div class="form-inline">
               <div class="form-group">
                 <input type="file" name="files[]" id="js-upload-files" multiple>
