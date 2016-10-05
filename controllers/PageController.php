@@ -58,6 +58,9 @@ function pageController()
             Auth::logout();
             $main_view = '../views/home.php';
             break;
+        case '/index' :
+            $main_view = '../views/ads/index.php';
+            break;
         default:    // displays 404 if route not specified above
             $main_view = '../views/404.php';
             break;
