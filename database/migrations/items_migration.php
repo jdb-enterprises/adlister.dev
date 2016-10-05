@@ -10,6 +10,7 @@ $query = 'CREATE TABLE items (
     price DECIMAL(4,2) NOT NULL,
     name VARCHAR(240) NOT NULL,
     description TEXT NOT NULL,
+    image VARCHAR(255), 
     PRIMARY KEY (id)
 )';
 
