@@ -29,12 +29,14 @@
           </ul>
         </li> -->
       </ul>
-      <form class="navbar-form navbar-left">
+
+      <form action="/show" class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input id="search" name="search" type="search" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" type="GET" href="/show" class="btn btn-default">Submit</button>
+        <a  href="/show"><button type="submit" class="btn btn-default">Submit</button></a>
       </form>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/login" type="GET">Login</a></li>
         <li class="dropdown">
