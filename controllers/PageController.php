@@ -14,10 +14,6 @@ function pageController()
     // if a ? was found, cuts off get variables if not just gives full url
     if ($get_pos !== false)
     {
-        if($_GET['page'] == 'login') {
-            $main_view = '../views/users/login.php';
-        }
-
         $request = substr($_SERVER['REQUEST_URI'], 0, $get_pos);
     }
     else
@@ -25,16 +21,20 @@ function pageController()
         $main_view = '../views/ads/index.php';
         $request = $_SERVER['REQUEST_URI'];
     }
-
+    // var_dump($request);
     // switch that will run functions and setup variables dependent on what route was accessed
-    // switch ($request) {
-
-
-    //     default:    // displays 404 if route not specified above
-    //         $main_view = '../views/404.php';
-    //         break;
-    // }
-
+    if(isset($_GET['page'])){
+        switch ($_GET['page']) {
+            case 'login' :
+                $main_view = '../views/users/login.php';
+                break;
+            case 'signup' :
+                $main_view = '../views/users/signup.php';
+            default:    // displays 404 if route not specified above
+                $main_view = '../views/404.php';
+                break;
+        }
+    }
     $data['main_view'] = $main_view;
 
     return $data;
