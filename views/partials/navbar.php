@@ -33,7 +33,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" type="GET" href="/show" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/login" type="GET">Login</a></li>
@@ -44,7 +44,7 @@
             <li><a href="/create" type="GET">Create Ad</a></li>
             <li><a href="/edit_ad" type="GET">Edit Ad</a></li>
             <li><a href="/edit_user" type="GET">Profile</a></li>
-            <li><a href="/home" type="GET">Logout</a></li>
+            <li><a href="/" type="GET">Logout</a></li>
           <!--   <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li> -->
           </ul>
