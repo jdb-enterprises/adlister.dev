@@ -10,4 +10,4 @@ require_once __DIR__ . '/models/User.php';
 
 
 // require front controller
-// require_once __DIR__ . '/controllers/PageController.php';
+require_once __DIR__ . '/controllers/PageController.php';
