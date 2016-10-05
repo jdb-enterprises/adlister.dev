@@ -6,4 +6,4 @@
 
 	Auth::logout();
 
-	Auth::redirect("/login.php");
+	Auth::redirect("http://adlister.dev/");
