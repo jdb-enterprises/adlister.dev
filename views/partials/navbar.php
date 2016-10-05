@@ -36,11 +36,11 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/index.php/login" type="GET">Login</a></li>
+        <li><a href="/login" type="GET">Login</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/index.php/signup" type="GET">Sign Up</a></li>
+            <li><a href="/signup" type="GET">Sign Up</a></li>
             <li><a href="#">Create Ad</a></li>
             <li><a href="#">Logout</a></li>
           <!--   <li role="separator" class="divider"></li>

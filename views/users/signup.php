@@ -41,7 +41,7 @@
 							<button type="submit" class="btn btn-primary">Signup</button>
 						</div>
 						<div class="col-sm-6 text-right">
-							<a href="/index.php/login" type="GET" class="btn btn-success">Go To Login</a>
+							<a href="/login" type="GET" class="btn btn-success">Go To Login</a>
 						</div>
 					</div>
 
