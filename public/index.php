@@ -1,8 +1,8 @@
-<!-- <?php
-// session_start();
-// require_once __DIR__ . '/../bootstrap.php';
+<?php 
+session_start();
+require_once __DIR__ . '/../bootstrap.php';
 
-?> -->
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,7 +16,7 @@
 	<body>
 		<?php require '../views/partials/header.php'; ?>
 		<?php require '../views/partials/navbar.php'; ?>
-		<?php require '../views/partials/content.php'; ?>
+		<?php require '../views/ads/index.php'; ?>
 
     	<!-- <?php //require $main_view; ?> -->
 
