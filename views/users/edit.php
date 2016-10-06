@@ -1,6 +1,17 @@
 <?php 
 	$user = new User;
 	$user = $user->findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
+	if(isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zip_code'])) {
+	  $user->name = Input::get('name');
+	  $user->email = Input::get('email');
+	  $user->username = Input::get('username');
+	  $user->address = Input::get('address');
+	  $user->city = Input::get('city');
+	  $user->state = Input::get('state');
+	  $user->zip_code = Input::get('zip_code');
+	  
+	  $user->save();
+	}
 ?>
 
 <div class="container">
