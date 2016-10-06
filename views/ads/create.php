@@ -7,6 +7,7 @@ if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['des
   $item->name = Input::get('name');
   $item->description = Input::get('description');
   $item->image = saveUploadedImage('image');
+  $item->user_id = $_SESSION['LOGGED_IN_ID'];
   
   $item->save();
 }
