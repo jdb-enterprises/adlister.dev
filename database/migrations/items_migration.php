@@ -7,7 +7,7 @@ $dbc->exec('DROP TABLE IF EXISTS items');
 
 $query = 'CREATE TABLE items (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    price DECIMAL(4,2) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
     name VARCHAR(240) NOT NULL,
     description TEXT NOT NULL,
     image VARCHAR(255), 
