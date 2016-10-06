@@ -1,7 +1,6 @@
 <?php 
 
 require_once __DIR__ . '/Model.php';
-
 class Item extends Model 
 {
     
@@ -40,7 +39,6 @@ class Item extends Model
 
         return $instance;
     }
-
 }
 
 
