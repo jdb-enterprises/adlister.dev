@@ -25,13 +25,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="/img/baconWallet.jpg" alt="">
+                                    <img class="slide-image" src="/uploads/baconWallet.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="/img/wiperGlasses.jpg" alt="">
+                                    <img class="slide-image" src="/uploads/wiperGlasses.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="/img/instantMullet.jpg" alt="">
+                                    <img class="slide-image" src="/uploads/instantMullet.jpg" alt="">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -49,7 +49,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img class="imgSize" src="/img/baconWallet.jpg" alt="">
+                            <img class="imgSize" src="/uploads/baconWallet.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$3.99</h4>
                                 <h4><a href="#">Bacon Wallet</a>
@@ -71,7 +71,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img class="imgSize" src="/img/wiperGlasses.jpg" alt="">
+                            <img class="imgSize" src="/uploads/wiperGlasses.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$10.99</h4>
                                 <h4><a href="#">Wiper Glasses</a>
@@ -93,7 +93,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img class="imgSize" src="/img/unicornCatHorn.jpg" alt="">
+                            <img class="imgSize" src="/uploads/unicornCatHorn.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$6.99</h4>
                                 <h4><a href="#">Unicorn Horn for Cats</a>
@@ -115,7 +115,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img class="imgSize" src="/img/beerBelt.jpg" alt="">
+                            <img class="imgSize" src="/uploads/beerBelt.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$10.99</h4>
                                 <h4><a href="#">Beer Belt</a>
@@ -137,7 +137,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img class="imgSize" src="/img/instantMullet.jpg" alt="">
+                            <img class="imgSize" src="/uploads/instantMullet.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$10.99</h4>
                                 <h4><a href="#">Instant Mullet</a>
