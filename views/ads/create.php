@@ -57,7 +57,7 @@ $item->save();
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
     <div class="col-md-5">                     
-      <input type="submit" name="submit">
+      <input class="btn btn-primary" type="submit">
     </div>
 </div>
 
