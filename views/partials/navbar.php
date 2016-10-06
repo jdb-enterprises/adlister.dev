@@ -43,7 +43,6 @@
 		  <li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=isset($_SESSION['IS_LOGGED_IN'])? $_SESSION['IS_LOGGED_IN']: 'Options';?><span class="caret"></span></a>
 			<ul class="dropdown-menu">
-			  <li><a href="/signup" type="GET">Sign Up</a></li>
 			  <li><a href="/create" type="GET">Create Ad</a></li>
 			  <li><a href="/edit_ad" type="GET">Edit Ad</a></li>
 			  <li><a href="/edit_user" type="GET">Profile</a></li>

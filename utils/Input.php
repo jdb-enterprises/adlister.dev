@@ -33,4 +33,10 @@ class Input
     {
         return $_REQUEST;
     }
+
+    // function to sanitize user input
+    public static function escape($input) 
+    {
+        return htmlspecialchars(strip_tags($input));
+    }
 }

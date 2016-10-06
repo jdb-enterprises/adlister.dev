@@ -1,9 +1,6 @@
 <?php 
 
-require_once '/vagrant/sites/adlister.dev/utils/Input.php';
-
-require_once __DIR__ . '/../../models/User.php';
-
+// Add new user. 
 if(isset($_REQUEST['name'])) {
 	$user = new User;
 	$user->name = Input::get('name');
@@ -32,7 +29,7 @@ if(isset($_REQUEST['name'])) {
 
 			<div class="col-md-6 col-md-offset-3">
 
-				<p>Please fill out the information below so we can create your account.</p>
+				<p class="text-center">Please fill out the information below so we can create your account.</p>
 				<?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
 	                <div class="alert alert-danger">
 	                    <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
