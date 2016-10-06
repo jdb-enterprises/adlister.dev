@@ -1,6 +1,7 @@
 <?php 
 
-if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description']) && isset($_REQUEST['image']) && isset($_FILES['image'])) {
+// Checks to see if the proper keys exist in the $_REQUEST, creates new instance of Item class, and saves new item
+if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description']) && isset($_FILES['image'])) {
   $item = new Item;
   $item->price = Input::get('price');
   $item->name = Input::get('name');
@@ -48,7 +49,7 @@ if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['des
 <div class="form-group">
   <label class="col-md-4 control-label">Upload</label>
   <div class="col-md-5">                     
-     <input type="file" name="image" accept="image/*">
+     <input type="file" id="image" name="image" accept="image/*">
 
   </div>
 </div>

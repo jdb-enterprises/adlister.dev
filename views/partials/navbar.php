@@ -41,7 +41,7 @@
 		<li><a href="/login" type="GET">Login</a></li>
 		<?php if (isset($_SESSION['IS_LOGGED_IN'])) {?>
 		  <li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=isset($_SESSION['IS_LOGGED_IN'])? $_SESSION['IS_LOGGED_IN']: 'Options';?><span class="caret"></span></a>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=isset($_SESSION['IS_LOGGED_IN'])? $_SESSION['IS_LOGGED_IN'] . " <i class='fa fa-gear'></i>" : 'Options';?><span class="caret"></span></a>
 			<ul class="dropdown-menu">
 			  <li><a href="/signup" type="GET">Sign Up</a></li>
 			  <li><a href="/create" type="GET">Create Ad</a></li>
