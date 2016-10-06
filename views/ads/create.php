@@ -4,12 +4,14 @@ require_once '/vagrant/sites/adlister.dev/utils/Input.php';
 
 require_once __DIR__ . '/../../models/Items.php';
 
-$item = new Item;
-$item->price = Input::get('price');
-$item->name = Input::get('name');
-$item->description = Input::get('description');
-// $item->image = "/img/.jpg";
-$item->save();
+if(isset($_REQUEST['price'])) {
+  $item = new Item;
+  $item->price = Input::get('price');
+  $item->name = Input::get('name');
+  $item->description = Input::get('description');
+  $item->image = saveUploadedImage(Input::get('image'));
+  $item->save();
+}
 
 
  ?>
@@ -46,13 +48,13 @@ $item->save();
   </div>
 </div>
 
-<!-- <div class="form-group">
+<div class="form-group">
   <label class="col-md-4 control-label">Upload</label>
   <div class="col-md-5">                     
-     <input type="file" name="pic" accept="image/*">
+     <input type="file" name="image" accept="image/*">
 
   </div>
-</div> -->
+</div>
 
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
