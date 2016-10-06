@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-4 col-lg-3 col-md-3">
             <div class="thumbnail">
-                <img class="imgSize" src="/img/baconWallet.jpg" alt="">
+                <img class="imgSize" src="/uploads/baconWallet.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">$3.99</h4>
                     <h4><a href="#">Bacon Wallet</a>
@@ -24,7 +24,7 @@
 
         <div class="col-sm-4 col-lg-3 col-md-3">
             <div class="thumbnail">
-                <img class="imgSize" src="/img/wiperGlasses.jpg" alt="">
+                <img class="imgSize" src="/uploads/wiperGlasses.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">$10.99</h4>
                     <h4><a href="#">Wiper Glasses</a>
@@ -46,7 +46,7 @@
 
         <div class="col-sm-4 col-lg-3 col-md-3">
             <div class="thumbnail">
-                <img class="imgSize" src="/img/unicornCatHorn.jpg" alt="">
+                <img class="imgSize" src="/uploads/unicornCatHorn.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">$6.99</h4>
                     <h4><a href="#">Unicorn Horn for Cats</a>
@@ -68,7 +68,7 @@
 
         <div class="col-sm-4 col-lg-3 col-md-3">
             <div class="thumbnail">
-                <img class="imgSize" src="/img/beerBelt.jpg" alt="">
+                <img class="imgSize" src="/uploads/beerBelt.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">$10.99</h4>
                     <h4><a href="#">Beer Belt</a>
@@ -90,12 +90,12 @@
 
         <div class="col-sm-4 col-lg-3 col-md-3">
             <div class="thumbnail">
-                <img class="imgSize" src="/img/instantMullet.jpg" alt="">
+                <img class="imgSize" src="/uploads/instantMullet.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">$10.99</h4>
                     <h4><a href="#">Instant Mullet</a>
                     </h4>
-                    <p>his Mullet is an instant fix for anyone with Hair issues or in serious need of a cool new 'do.</p>
+                    <p>This Mullet is an instant fix for anyone with Hair issues or in serious need of a cool new 'do.</p>
                 </div>
                 <div class="ratings">
                     <p class="pull-right">18 reviews</p>
