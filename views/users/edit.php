@@ -1,3 +1,8 @@
+<?php 
+	$user = new User;
+	$user = $user->findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
+?>
+
 <div class="container">
 
 	<section id="login">
@@ -30,27 +35,27 @@
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
-					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?//= $user->email; ?>" data-required>
+					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label for="username">Username</label>
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?//= $user->username; ?>" data-required>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label for="address">Street Address</label>
-					    <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?//= $user->address; ?>" data-required>
+					    <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= $user->address; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label for="city">City</label>
-					    <input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?//= $user->city; ?>" data-required>
+					    <input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= $user->city; ?>" data-required>
 					</div>
 					<div class="form-group">
 						
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="state" name="state">
-								<option value="">Select State</option>
+							<select class="form-control" id="state" name="state" selected="<?= $user->state; ?>">
+								<option value="<?= $user->state; ?>""><?= $user->state; ?></option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
 								<option value="AR">Arkansas</option>
@@ -109,7 +114,7 @@
 					</div>
 					<div class="form-group">
 						<label for="zip_code">Zip Code</label>
-					    <input type="number" class="form-control" id="zip_code" name="zip_code" placeholder="zip_code" value="<?//= $user->zip_code; ?>" data-required>
+					    <input type="number" class="form-control" id="zip_code" name="zip_code" placeholder="zip_code" value="<?= $user->zip_code; ?>" data-required>
 					</div>
 					<button type="submit" class="btn btn-primary">Update Account</button>
 
