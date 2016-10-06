@@ -43,13 +43,28 @@ function pageController()
             $main_view = '../views/users/signup.php';
             break;
         case '/create' :
-            $main_view = '../views/ads/create.php';
+            if (isset($_SESSION['IS_LOGGED_IN'])) {
+                $main_view = '../views/ads/create.php';
+            } else {
+                header('Location: /login');
+                die;
+            }
             break;
         case '/edit_ad' :
-            $main_view = '../views/ads/edit.php';
+            if (isset($_SESSION['IS_LOGGED_IN'])) {
+                $main_view = '../views/ads/edit.php';
+            } else {
+                header('Location: /login');
+                die;
+            }
             break;
-        case '/edit_user' : 
-            $main_view = '../views/users/edit.php';
+        case '/edit_user' :
+            if (isset($_SESSION['IS_LOGGED_IN'])) {
+                $main_view = '../views/users/edit.php';
+            } else {
+                header('Location: /login');
+                die;
+            }
             break;
         case '/show' :
             $main_view = '../views/ads/show.php';
