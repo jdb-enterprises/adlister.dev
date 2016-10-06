@@ -36,6 +36,7 @@ class Auth
 			// sets session variables used for logged in user
 			$_SESSION['IS_LOGGED_IN'] = $user->username;
 			$_SESSION['LOGGED_IN_ID'] = $user->id;
+			header( 'Location: /');
 
 			return true;
 		}
@@ -48,7 +49,7 @@ class Auth
 	// checks session to see if user is logged in
 	public static function check()
 	{
-
+		
 		return (isset($_SESSION['IS_LOGGED_IN']) && $_SESSION['IS_LOGGED_IN'] != '');
 	}
 
