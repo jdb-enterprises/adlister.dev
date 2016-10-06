@@ -11,9 +11,7 @@ function pageController()
     // finds position for ? in url so we can look at the url minus the get variables
     $get_pos = strpos($_SERVER['REQUEST_URI'], '?');
 
-    var_dump(User::findByUsernameOrEmail(Input::get('username')));
-
-    if(!empty($_POST['username']) && !empty($_POST['password'])) {
+    if(!empty($_POST)) {
 
         $username = Input::get('username');
         $password = Input::get('password');
