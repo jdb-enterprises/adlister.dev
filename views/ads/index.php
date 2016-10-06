@@ -1,14 +1,5 @@
 <?php 
 
-require_once '/vagrant/sites/adlister.dev/database/db_connect.php';
-
-// $query2 = ("SELECT * FROM items");
-//     $stmt2 = Model::$dbc->prepare($query2);
-//     $stmt2->execute();
-//     $items = $stmt2 ->fetchAll(PDO::FETCH_ASSOC);
-
-//     var_dump($items[0]['price']);
-
 $item = new Item;
 $allItems = $item->all();
 
