@@ -13,7 +13,7 @@ $query = 'CREATE TABLE items (
     description TEXT NOT NULL,
     image VARCHAR(255), 
     PRIMARY KEY (id),
-    FOREIGN KEY (user_id), REFERENCES user (id)
+    FOREIGN KEY (user_id) REFERENCES user (id)
 )';
 
 $dbc->exec($query);
