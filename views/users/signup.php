@@ -2,7 +2,22 @@
 
 require_once '/vagrant/sites/adlister.dev/utils/Input.php';
 
-require_once __DIR__ . '/../../models/Model.php';
+require_once __DIR__ . '/../../models/User.php';
+
+if(isset($_REQUEST['name'])) {
+	$user = new User;
+	$user->name = Input::get('name');
+	$user->address = Input::get('address');
+	$user->city = Input::get('city');
+	$user->state = Input::get('state');
+	$user->zip_code = Input::get('zip_code');
+	$user->email = Input::get('email');
+	$user->username = Input::get('username');
+	$user->password = Input::get('password');
+
+	$user->save();
+
+}
 
  ?>
 
