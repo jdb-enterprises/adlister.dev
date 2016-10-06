@@ -2,9 +2,7 @@
 
 require_once '/vagrant/sites/adlister.dev/utils/Input.php';
 
-require_once __DIR__ . '/../../models/User.php';
-
-
+require_once __DIR__ . '/../../models/Model.php';
 
  ?>
 
@@ -15,7 +13,7 @@ require_once __DIR__ . '/../../models/User.php';
 
 		<div class="row">
 
-			<h1 class="section-title">Signup For JDB Membership</h1>
+			<h1 class="section-title text-center">Signup For JDB Membership</h1>
 
 			<div class="col-md-6 col-md-offset-3">
 
