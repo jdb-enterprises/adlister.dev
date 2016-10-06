@@ -50,7 +50,7 @@
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
 							<select class="form-control" id="state" name="state">
-								<option value="">N/A</option>
+								<option value="">Select State</option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
 								<option value="AR">Arkansas</option>
