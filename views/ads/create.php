@@ -1,18 +1,12 @@
 <?php 
 
-require_once '/vagrant/sites/adlister.dev/utils/Input.php';
-
-require_once __DIR__ . '/../../models/Items.php';
-
-if(isset($_REQUEST['price'])) {
+if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description']) && isset($_REQUEST['image']) && isset($_FILES['image'])) {
   $item = new Item;
   $item->price = Input::get('price');
   $item->name = Input::get('name');
   $item->description = Input::get('description');
-   Input::get('image');
-  if(isset($_FILES['image'])){
-        $item->image = saveUploadedImage('image');
-    }
+  $item->image = saveUploadedImage('image');
+  
   $item->save();
 }
 
