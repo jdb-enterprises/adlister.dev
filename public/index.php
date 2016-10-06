@@ -1,7 +1,10 @@
 <?php 
 session_start();
 require_once __DIR__ . '/../bootstrap.php';
-var_dump($_SESSION);
+echo '$_REQUEST: ';
+var_dump($_REQUEST);
+echo '$_FILES: ';
+var_dump($_FILES);
 ?>
 <!DOCTYPE html>
 

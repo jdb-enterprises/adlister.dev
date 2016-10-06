@@ -9,7 +9,10 @@ if(isset($_REQUEST['price'])) {
   $item->price = Input::get('price');
   $item->name = Input::get('name');
   $item->description = Input::get('description');
-  $item->image = Input::get('image');
+   Input::get('image');
+  if(isset($_FILES['image'])){
+        $item->image = saveUploadedImage('image');
+    }
   $item->save();
 }
 
@@ -17,7 +20,7 @@ if(isset($_REQUEST['price'])) {
  ?>
 <!--Page for creating new advertisement listings-->
 
-<form class="form-horizontal" method="GET">
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
 <fieldset>
 
 <!-- Text input-->

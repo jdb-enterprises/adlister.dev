@@ -7,6 +7,7 @@
 function saveUploadedImage($input_name)
 {
     $valid = true;
+    
     // checks if $input_name is in the files super global
     if(isset($_FILES[$input_name]) && $_FILES[$input_name]['name'])
     {
