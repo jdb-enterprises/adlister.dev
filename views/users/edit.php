@@ -26,7 +26,7 @@
 
 					<div class="form-group">
 						<label for="name">Name</label>
-					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?//= $user->name; ?>" data-required>
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
