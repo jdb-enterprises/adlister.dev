@@ -9,7 +9,7 @@ if(isset($_REQUEST['price'])) {
   $item->price = Input::get('price');
   $item->name = Input::get('name');
   $item->description = Input::get('description');
-  $item->image = saveUploadedImage(Input::get('image'));
+  $item->image = Input::get('image');
   $item->save();
 }
 
