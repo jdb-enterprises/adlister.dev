@@ -37,7 +37,7 @@ class Auth
 			$_SESSION['IS_LOGGED_IN'] = $user->username;
 			$_SESSION['LOGGED_IN_ID'] = $user->id;
 			header( 'Location: /');
-
+			die;
 			return true;
 		}
 
