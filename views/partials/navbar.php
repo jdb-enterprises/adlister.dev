@@ -9,6 +9,7 @@
 		<span class="icon-bar"></span>
 	  </button>
 	  <a class="navbar-brand" href="/">Home</a>
+	  <a class="navbar-brand" href="/index">View All Items</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
