@@ -1,7 +1,7 @@
 <?php 
 
 require_once '/vagrant/sites/adlister.dev/utils/Input.php';
-require_once '/vagrant/sites/adlister.dev/utils/helper_functions.php';
+
 require_once __DIR__ . '/../../models/Items.php';
 
 if(isset($_REQUEST['price'])) {
