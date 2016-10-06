@@ -1,18 +1,18 @@
-<!-- Page Content -->
+<!--Page Content -->
     <div class="container">
 
         <div class="row">
 
-            <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
-            </div>
+            <!-- <div class="col-md-3"> -->
+                <!-- <p class="lead">Shop Name</p> -->
+                <!-- <div class="list-group"> -->
+                    <!-- <a href="#" class="list-group-item">Category 1</a> -->
+                    <!-- <a href="#" class="list-group-item">Category 2</a> -->
+                    <!-- <a href="#" class="list-group-item">Category 3</a> -->
+                <!-- </div> -->
+            <!-- </div> -->
 
-            <div class="col-md-9">
+          <!--   <div class="col-md-9"> -->
 
                 <div class="row carousel-holder">
 
@@ -142,7 +142,7 @@
                                 <h4 class="pull-right">$10.99</h4>
                                 <h4><a href="#">Instant Mullet</a>
                                 </h4>
-                                <p>his Mullet is an instant fix for anyone with Hair issues or in serious need of a cool new 'do.</p>
+                                <p>This Mullet is an instant fix for anyone with Hair issues or in serious need of a cool new 'do.</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">18 reviews</p>
