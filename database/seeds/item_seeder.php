@@ -41,3 +41,27 @@ $item->description = "Let your Hair blow in the wind as you roll down the highwa
 $item->image = "/img/uploads/instantMullet.jpg";
 $item->user_id = 4;
 $item->save();
+
+$item = new Item;
+$item->price = '19.98';
+$item->name = "Turd Twister";
+$item->description = "The Turd Twister is a complete kit for shaping your turd into amazing designs, and it comes with a hilarious instruction manual. It's the Ultimate Gift for the person who has everything, including a twisted sense of humor! The kit ships with our 10 most popular Turd Twisters. 10 laugh-inspiring, dishwasher-safe Turd Twisters, and that's just the beginning!In addition, you'll get the Amazing Manual called How to Twist Your Turds. This booklet, loaded with images explaining the art and science of Turd Twisting, will have everyone rolling on the floor laughing.";
+$item->image = "/img/uploads/turdtwister.jpg";
+$item->user_id = 1;
+$item->save();
+
+$item = new Item;
+$item->price = '29.99';
+$item->name = "Horse Mask";
+$item->description = "Humorous and disturbing, our Horse Head Mask is sure to be an attention-grabber. This creepy latex mask measures 19 inches long and comes with a realistic fur mane that creates an even more disconcerting look. Embrace your equine alter ego for costume parties or any event where you would like to remain anonymous and creep people out at the same time. You could even use it on an enemy to reenact the classic horse head scene from the Godfather. They actually used a real horse head donated by a dog food company in the movie! Gross!";
+$item->image = "/img/uploads/horseHead.jpg";
+$item->user_id = 2;
+$item->save();
+
+$item = new Item;
+$item->price = '7.99';
+$item->name = "Mr. T Keychain";
+$item->description = "Is someone giving you trouble? Is someone backtalking you? You need Mr. T on your side! Soon you'll be pitying the fool who starts jibber-jabbering! Mr. T is famously known for his role as Sgt. Bosco B.A. Baracus in the 1980s television series The A-Team and for wearing an excessive amount of gold jewelry. Just hearing his voice strikes fear and evokes respect!";
+$item->image = "/img/uploads/mrtkeychain.jpg";
+$item->user_id = 5;
+$item->save();
