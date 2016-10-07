@@ -23,7 +23,7 @@
 
             <div class="col-md-9">
 
-                <div class="thumbnail">
+                <div class="thumbnail box">
                     <img class="img-responsive img-thumbnail" src="<?= $item->image ?>" alt="">
                     <div class="caption-full">
                         <h4 class="pull-right">$<?= $item->price ?></h4>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="well">
+                <div class="well box">
 
                     <div class="text-right">
                         <a class="btn btn-success">Leave a Review</a>
