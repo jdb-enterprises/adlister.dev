@@ -48,6 +48,7 @@
 			  <li><a href="/edit_ad" type="GET">Edit Ad</a></li>
 			  <li><a href="/edit_user" type="GET">Profile</a></li>
 			  <li role="separator" class="divider"></li>
+			  <li><a href="/account" type="GET">Account</a></li>
 			  <li><a href="/logout" type="GET">Logout</a></li>
 			</ul>
 		  </li>
