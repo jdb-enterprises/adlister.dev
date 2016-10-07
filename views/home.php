@@ -54,7 +54,7 @@ $allItems = $item->all();
                 <h2>Featured Items</h2>
                 <div class="row">
 
-                    <!-- forloop --> <?php for ($i=0; $i < 3; $i++) { ?>
+                    <!-- forloop --> <?php for ($i=0; $i < 6; $i++) { ?>
     
          <div class="col-sm-4 col-lg-4 col-md-4">
             <div class="thumbnail">
