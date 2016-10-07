@@ -64,32 +64,32 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Name</label>
-					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" data-required>
+					    <input type="text" pattern="([A-Z])\w+" class="form-control" id="name" name="name" placeholder="Full Name" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Email</label>
-					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-required>
+					    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Username</label>
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" data-required>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Password</label>
-					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
+					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Address</label>
-					    <input type="text" class="form-control" id="address" name="address" placeholder="Address" data-required>
+					    <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">City</label>
-					    <input type="text" class="form-control" id="city" name="city" placeholder="City" data-required>
+					    <input type="text" pattern="([A-Z])\w+" class="form-control" id="city" name="city" placeholder="City" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="state" name="state">
+							<select class="form-control" id="state" name="state" required>
 								<option value="">N/A</option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
@@ -149,7 +149,7 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 					<br>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Zip Code</label>
-					    <input type="text" class="form-control" id="zip_code" name="zip_code" placeholder="Zip Code" data-required>
+					    <input type="number" pattern="[0-9]{5}" maxlength="5" class="form-control" id="zip_code" name="zip_code" placeholder="Zip Code" required>
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
