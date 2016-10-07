@@ -1,7 +1,7 @@
 <!--Page that includes the form to edit an existing ad-->
 <?php 
 	$item = new Item;
-	$item = $item->searchItems('cat');
+	$item = $item->searchItems($_REQUEST['search']);
 	if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description'])) {
 		$item->name = Input::get('name');
 		$item->price = Input::get('price');

@@ -39,6 +39,11 @@ class Item extends Model
 
         return $instance;
     }
+
+    public static function userItems() {
+        $stmt = self::$dbc->query('SELECT * FROM items WHERE user_id = ' . $_SESSION['LOGGED_IN_ID']);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
 
