@@ -25,21 +25,15 @@ $allItems = $item->all();
 
                     <div class="col-md-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="/img/uploads/baconWallet.jpg" alt="">
+                                    <img class="slide-image" src="<?= $allItems->attributes[0]['image'] ?> " alt="">
                                 </div>
+             <!-- forloop --> <?php for ($i=1; $i < count($allItems->attributes); $i++) { ?>
                                 <div class="item">
-                                    <img class="slide-image" src="/img/uploads/wiperGlasses.jpg" alt="">
+                                    <img class="slide-image" src="<?= $allItems->attributes[$i]['image'] ?> " alt="">
                                 </div>
-                                <div class="item">
-                                    <img class="slide-image" src="/img/uploads/instantMullet.jpg" alt="">
-                                </div>
+             <!-- endfor --> <?php }?>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -49,7 +43,7 @@ $allItems = $item->all();
                             </a>
                         </div>
                     </div>
-
+                    </div>
                 </div>
                 <h2>Featured Items</h2>
                 <div class="row">
