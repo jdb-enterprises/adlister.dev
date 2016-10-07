@@ -38,7 +38,6 @@ class Auth
 			$_SESSION['LOGGED_IN_ID'] = $user->id;
 			header( 'Location: /');
 			die;
-			return true;
 		}
 
 
