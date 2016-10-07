@@ -1,4 +1,8 @@
 <?php 
+
+
+// Add new user.
+
 if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zip_code']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
 	
 	$userCheck = new User;
