@@ -79,6 +79,14 @@ function pageController()
         default:    // displays 404 if route not specified above
             $main_view = '../views/404.php';
             break;
+        case '/account' :
+            if(isset($_SESSION['IS_LOGGED_IN'])) {
+                $main_view = '../views/users/account.php';
+            } else {
+                header('Location: /login');
+                die;
+            }
+            break;   
     }
 
     $data['main_view'] = $main_view;
