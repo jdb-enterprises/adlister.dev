@@ -16,7 +16,7 @@
 	  
 	  $user->save();
   }
-   
+
   ?>
 <div class="container">
     <div class="row">
