@@ -64,7 +64,7 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Name</label>
-					    <input type="text" pattern="([A-Z])\w+" class="form-control" id="name" name="name" placeholder="Full Name" required>
+					    <input type="text" pattern="([A-Za-z])\w+" class="form-control" id="name" name="name" placeholder="Full Name" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">Email</label>
@@ -84,7 +84,7 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">City</label>
-					    <input type="text" pattern="([A-Z])\w+" class="form-control" id="city" name="city" placeholder="City" required>
+					    <input type="text" pattern="([A-Za-z])\w+" class="form-control" id="city" name="city" placeholder="City" required>
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">State</label>

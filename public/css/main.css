@@ -27,6 +27,7 @@ body {
 
 .carousel-holder {
     margin-bottom: 30px;
+    
 }
 
 .carousel-control,
@@ -82,7 +83,9 @@ body {
 .create-form {
 	padding-left: 18%;
 }
-
+.box {
+	box-shadow: 0px 0px 100px #888;
+}
 #logo {
 	width: 15vw;
 	height: 25vh;
@@ -98,6 +101,9 @@ footer {
     margin: 50px 0;
 }
 
+#carousel-example-generic {
+	box-shadow: 0px 0px 100px #888;
+}
 
 
 /**********/
