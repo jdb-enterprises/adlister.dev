@@ -21,7 +21,7 @@
 
 			<div class="col-md-6 col-md-offset-3">
 
-				<p>Login with your email/username and password</p>
+				<p class="text-center">Login with your email/username and password</p>
 
 				<form method="POST" data-validation data-required-message="This field is required">
 
