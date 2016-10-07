@@ -1,19 +1,32 @@
 <?php 
+if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zip_code']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
+	
+	$userCheck = new User;
+	$username = $userCheck->findByUsernameOrEmail($_REQUEST['username']);
+	$email = $userCheck->findByUsernameOrEmail($_REQUEST['email']);
 
-// Add new user. 
-if(isset($_REQUEST['name'])) {
-	$user = new User;
-	$user->name = Input::get('name');
-	$user->address = Input::get('address');
-	$user->city = Input::get('city');
-	$user->state = Input::get('state');
-	$user->zip_code = Input::get('zip_code');
-	$user->email = Input::get('email');
-	$user->username = Input::get('username');
-	$user->password = Input::get('password');
+	if ($username != null || $email != null) {
+		$_SESSION['ERROR_MESSAGE'] = 'Login information already exists, Try again!';
+	} else {
+	// Add new user. 
 
-	$user->save();
+		$user = new User;
+		$user->name = Input::get('name');
+		$user->address = Input::get('address');
+		$user->city = Input::get('city');
+		$user->state = Input::get('state');
+		$user->zip_code = Input::get('zip_code');
+		$user->email = Input::get('email');
+		$user->username = Input::get('username');
+		$user->password = Input::get('password');
 
+		$user->save();
+
+		$_SESSION['SUCCESS_MESSAGE'] = 'Success: Please Login!';
+
+    	// sets session variables used for logged in user
+		
+	}
 }
 
  ?>
@@ -136,6 +149,7 @@ if(isset($_REQUEST['name'])) {
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
+							<input type="hidden" name="signup" value="true">
 							<button type="submit" class="btn btn-primary">Signup</button>
 						</div>
 						<div class="col-sm-6 text-right">
