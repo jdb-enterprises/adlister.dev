@@ -14,7 +14,7 @@ $allItems = $item->all();
                 <img class="imgSize" src="<?= $allItems->attributes[$i]['image'] ?> " alt="">
                 <div class="caption">
                     <h4 class="pull-right">$<?= $allItems->attributes[$i]['price'] ?></h4>
-                    <h4><a href="#"><?= $allItems->attributes[$i]['name'] ?></a>
+                    <h4><a href="/show?search=<?=$allItems->attributes[$i]['name']?>"><?= $allItems->attributes[$i]['name'] ?></a>
                     </h4>
                     <p><?= $allItems->attributes[$i]['description'] ?><p>
                 </div>

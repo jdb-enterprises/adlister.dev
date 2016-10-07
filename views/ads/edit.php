@@ -1,4 +1,19 @@
 <!--Page that includes the form to edit an existing ad-->
+<?php 
+	$item = new Item;
+	$item = $item->searchItems('cat');
+	if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description'])) {
+	  $item->name = Input::get('name');
+	  $item->price = Input::get('price');
+	  $item->description = Input::get('description');
+	  $item->image = saveUploadedImage('image');
+	  $item->user_id = $_SESSION['LOGGED_IN_ID'];
+	  
+	  $item->save();
+	}
+?>
+
+
 <div class="container">
 
 	<section id="login">
@@ -23,31 +38,35 @@
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required">
+				<form method="POST" action="" data-validation data-required-message="This field is required" enctype="multipart/form-data">
 
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Price</label>
-					    <input type="text" class="form-control" id="price" name="price" placeholder="Enter New Price" value="<?//= $item->price; ?>" data-required>
+					    <input type="text" class="form-control" id="price" name="price" placeholder="Enter New Price" value="<?= $item->price; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Name</label>
-					    <input type="text" class="form-control" id="name" name="name" placeholder="Enter New Name" value="<?//= $item->name; ?>" data-required>
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" data-required>
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Description</label>
-					    <input type="text" class="form-control" id="description" name="description" placeholder="Enter New Description" value="<?//= $user->description; ?>" data-required>
+					    <input type="text" class="form-control" id="description" name="description" placeholder="Enter New Description" value="<?= $item->description; ?>" data-required>
 					</div>
-					<div class="form-group">
+					<div class="form-group well pull-left">
   						<label class="col-md-4 control-label">Upload New Image</label>
- 						<div class="col-md-5">                     
-    				 		<input type="file" name="pic" accept="image/*">
+  						<br>
+ 							<input type="file" name="image" accept="image/*">
+    				 		<img class="img-thumbnail" src="<?= $item->image ?>">
+ 						<div class="col-md-5">    
+ 							<br>
+
   						</div>
 					</div>
-					<br>
-					<div class="form-group">
+					
+					<div class="form-group pull-right">
             			<label class="col-md-3 control-label"></label>
            				<div class="col-md-8">
-             				<input type="button" class="btn btn-primary" value="Save Changes">
+             				<input type="submit" class="btn btn-primary" value="Save Changes">
               				<span></span>
               				<input type="reset" class="btn btn-default" value="Cancel">
             			</div>
