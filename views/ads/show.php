@@ -26,13 +26,9 @@
                 <div class="thumbnail">
                     <img class="img-responsive img-thumbnail" src="<?= $item->image ?>" alt="">
                     <div class="caption-full">
-                        <h4 class="pull-right"><?= $item->price ?></h4>
+                        <h4 class="pull-right">$<?= $item->price ?></h4>
                         <h4><a href="#"><?= $item->name ?></a>
                         </h4>
-                        <p>See more snippets like these online store reviews at <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                        <p>Want to make these reviews work? Check out
-                            <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-                            </strong>over at maxoffsky.com!</p>
                         <p><?= $item->description ?></p>
                     </div>
                     <div class="ratings">
