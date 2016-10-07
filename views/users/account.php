@@ -5,7 +5,6 @@ Page for user account home-->
 
   $items = new Item;
   $userItems = $items->userItems();
-  var_dump($userItems);
 
   $user = new User;
   $user = $user->findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
