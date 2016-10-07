@@ -65,3 +65,35 @@ $item->description = "Is someone giving you trouble? Is someone backtalking you?
 $item->image = "/img/uploads/mrtkeychain.jpg";
 $item->user_id = 5;
 $item->save();
+
+$item = new Item;
+$item->price = '15.99';
+$item->name = "GIANT FIST KOOZIE";
+$item->description = "This has to be the coolest koozie ever made! Keep your drink cold in a giant foam fist! Simply insert your drink in the Fist and then place your hand inside. The Koozie is easy to grip and will persuade everyone to stay away from your Drink. You can use your new Giant Fists to terrorize the neighborhood, start an arm wrestling career, or ware-in new mattresses with a beat down session.";
+$item->image = "/img/uploads/giantFist.jpg";
+$item->user_id = 3;
+$item->save();
+
+$item = new Item;
+$item->price = '13.99';
+$item->name = "Yodeling Pickle";
+$item->description = "If you've been looking for the perfect item to throw your money away on, your search is over. You can't possibly need this. You can't possibly use this. In fact, it is unlikely that you even WANT this. And that's why you should buy the Electronic Yodeling Pickle. You only live once, and we think it's important to do something absolutely ridiculous once in awhile. And what can be more ridiculous than a yodelling pickle? ";
+$item->image = "/img/uploads/pickle.jpg";
+$item->user_id = 4;
+$item->save();
+
+$item = new Item;
+$item->price = '25.99';
+$item->name = "Mr. Potato Yoda";
+$item->description = "What happens when a Jedi eats french fries? He turns into a Potato, that's what! This 3 inch Potato Head is the great YODA. Figure is great for display and comes with removable components, such as clothes and light saber.";
+$item->image = "/img/uploads/yoda.jpg";
+$item->user_id = 5;
+$item->save();
+
+$item = new Item;
+$item->price = '25.99';
+$item->name = "Mugging Mug";
+$item->description = "Gimme all your teabags! Cooperate, and this Mugga Mug might become your favourite cup. It quite hard to take this guy's hard crime cover at face value when he is so handy in the kitchen. His cute balaclava will even keep your hot drink hotter for longer! Not just great as a gift for your quirky friends, the Mugga Mug would be the perfect addition to your own mug collection.";
+$item->image = "/img/uploads/mug.jpg";
+$item->user_id = 2;
+$item->save();
