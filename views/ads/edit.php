@@ -3,13 +3,13 @@
 	$item = new Item;
 	$item = $item->searchItems('cat');
 	if(isset($_REQUEST['price']) && isset($_REQUEST['name']) && isset($_REQUEST['description'])) {
-	  $item->name = Input::get('name');
-	  $item->price = Input::get('price');
-	  $item->description = Input::get('description');
-	  $item->image = saveUploadedImage('image');
-	  $item->user_id = $_SESSION['LOGGED_IN_ID'];
-	  
-	  $item->save();
+		$item->name = Input::get('name');
+		$item->price = Input::get('price');
+		$item->description = Input::get('description');
+		$item->image = saveUploadedImage('image');
+		$item->user_id = $_SESSION['LOGGED_IN_ID'];
+
+		$item->save();
 	}
 ?>
 
@@ -38,7 +38,7 @@
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required" enctype="multipart/form-data">
+				<form method="POST" action="" data-validation data-required-message="This field is required" enctype="multipart/form-data" runat="server">
 
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Price</label>
@@ -55,12 +55,22 @@
 					<div class="form-group well pull-left">
   						<label class="col-md-4 control-label">Upload New Image</label>
   						<br>
- 							<input type="file" name="image" accept="image/*">
-    				 		<img class="img-thumbnail" src="<?= $item->image ?>">
- 						<div class="col-md-5">    
- 							<br>
+ 							<input type="file" name="image" id="image-input" accept="image/*">
+    				 		<img class="img-thumbnail" id="preview" src="<?= $item->image ?>">
+    				 		
+    				 		<script> 
+    				 			document.getElementById("image-input").onchange = function () {
+								    var reader = new FileReader();
 
-  						</div>
+								    reader.onload = function (e) {
+								        // get loaded data and render thumbnail.
+								        document.getElementById("preview").src = e.target.result;
+								    };
+
+								    // read the image file as a data URL.
+								    reader.readAsDataURL(this.files[0]);
+								};
+    				 		</script>
 					</div>
 					
 					<div class="form-group pull-right">

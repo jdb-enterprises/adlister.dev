@@ -1,38 +1,17 @@
-+ function($) {
-    'use strict';
+'use strict';
 
-    // UPLOAD CLASS DEFINITION
-    // ======================
+(function() {
 
-    var dropZone = document.getElementById('drop-zone');
-    var uploadForm = document.getElementById('js-upload-form');
+document.getElementById("image-input").onchange = function () {
+    var reader = new FileReader();
 
-    var startUpload = function(files) {
-        console.log(files)
-    }
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        document.getElementById("preview").src = e.target.result;
+    };
 
-    uploadForm.addEventListener('submit', function(e) {
-        var uploadFiles = document.getElementById('js-upload-files').files;
-        e.preventDefault()
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+};
 
-        startUpload(uploadFiles)
-    })
-
-    dropZone.ondrop = function(e) {
-        e.preventDefault();
-        this.className = 'upload-drop-zone';
-
-        startUpload(e.dataTransfer.files)
-    }
-
-    dropZone.ondragover = function() {
-        this.className = 'upload-drop-zone drop';
-        return false;
-    }
-
-    dropZone.ondragleave = function() {
-        this.className = 'upload-drop-zone';
-        return false;
-    }
-
-}(jQuery);
+})();
