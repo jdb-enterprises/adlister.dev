@@ -6,6 +6,7 @@
 
 body {
     padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-bottom: 0px;
 }
 
 .page-header{
@@ -99,6 +100,7 @@ body {
 
 footer {
     margin: 50px 0;
+    margin-bottom: 0px;
 }
 
 #carousel-example-generic {
@@ -127,6 +129,7 @@ footer {
 	border-bottom: 1px solid #CCCCCC;
 	border-top: 1px solid #DDDDDD;
 	margin-top: 100px;
+	margin-bottom: 0px;
 }
 .footer p {
 	margin: 0;
