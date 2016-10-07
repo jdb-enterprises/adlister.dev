@@ -46,7 +46,7 @@
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Name</label>
-					    <input type="text" class="form-control" pattern="([A-Z])\w+" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" required>
+					    <input type="text" class="form-control" pattern="([A-Za-z])\w+" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" required>
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Description</label>
@@ -55,7 +55,7 @@
 					<div class="form-group well pull-left">
   						<label class="col-md-4 control-label">Upload New Image</label>
   						<br>
- 							<input type="file" name="image" id="image-input" accept="image/*">
+ 							<input type="file" name="image" id="image-input" value="<?= $item->image ?>" accept="image/*">
     				 		<img class="img-thumbnail" id="preview" src="<?= $item->image ?>">
 					</div>
 					
@@ -63,8 +63,8 @@
             			<label class="col-md-3 control-label"></label>
            				<div class="col-md-8">
              				<input type="submit" class="btn btn-primary" value="Save Changes">
+              				<a href="/account"><div class="btn btn-default">Cancel</div></a>
               				<span></span>
-              				<input type="reset" class="btn btn-default" value="Cancel">
             			</div>
          			</div>
 
