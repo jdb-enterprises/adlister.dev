@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Service </h3>
+                    <h3> Support </h3>
                     <ul>
                         <li> <a href="#"> Order Status </a> </li>
                         <li> <a href="#"> Request Item </a> </li>
@@ -12,12 +12,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> Contact </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Contact Us </a> </li>
+                        <li> <a href="#"> Returns </a> </li>
+                        <li> <a href="#"> Shipping Info </a> </li>
+                        <!-- <li> <a href="#"> Lorem Ipsum </a> </li> -->
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
@@ -35,12 +35,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Contact Us </h3>
+                    <h3> Newsletter Signup </h3>
                     <ul>
                         <li>
                             <div class="input-append newsletter-box text-center">
                                 <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Send Email <i class="fa fa-long-arrow-right"> </i> </button>
+                                <button class="btn  bg-gray" type="button"> Get Newsletter <i class="fa fa-long-arrow-right"> </i> </button>
                             </div>
                         </li>
                     </ul>
