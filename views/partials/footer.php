@@ -4,12 +4,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> Service </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Order Status </a> </li>
+                        <li> <a href="#"> Request Item </a> </li>
+                        <li> <a href="/signup.php"> Sign Up </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
@@ -22,12 +21,11 @@
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> Friends of JDB </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="http://www.stupid.com/"> Stupid.com </a> </li>
+                        <li> <a href="http://shutupandtakemymoney.com/"> Shut up and Take My Money </a> </li>
+                        <li> <a href="http://www.thinkgeek.com/"> Think Geek </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">

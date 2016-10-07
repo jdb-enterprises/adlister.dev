@@ -1,4 +1,4 @@
-Page for user account home-->
+<!-- Page for user account home-->
 <?php 
   require_once('../models/Model.php');
 	date_default_timezone_set("America/Chicago");
