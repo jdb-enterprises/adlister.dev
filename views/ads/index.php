@@ -9,7 +9,7 @@ $allItems = $item->all();
     <div class="row">
     <!-- forloop --> <?php for ($i=0; $i < count($allItems->attributes); $i++) { ?>
     
-         <div class="col-sm-4 col-lg-3 col-md-3">
+         <div class="col-sm-4 col-lg-3 col-md-3 box">
             <div class="thumbnail">
                 <img class="imgSize" src="<?= $allItems->attributes[$i]['image'] ?> " alt="">
                 <div class="caption">

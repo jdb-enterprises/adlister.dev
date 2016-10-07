@@ -46,7 +46,7 @@
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Name</label>
-					    <input type="text" class="form-control" pattern="([A-Za-z])\w+" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" required>
+					    <input type="text" class="form-control" pattern="[a-zA-Z\s]+" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" required>
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Description</label>
