@@ -27,11 +27,17 @@ $allItems = $item->all();
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="<?= $allItems->attributes[0]['image'] ?> " alt="">
+                                    <a href="/show?search=<?=$allItems->attributes[0]['name']?>"><img class="slide-image" src="<?= $allItems->attributes[0]['image'] ?> " alt=""></a>
+                                    <div class="carousel-caption">
+                                        <h3><a href="/show?search=<?=$allItems->attributes[0]['name']?>"><?=$allItems->attributes[0]['name']?></a></h3>
+                                    </div>
                                 </div>
              <!-- forloop --> <?php for ($i=1; $i < count($allItems->attributes); $i++) { ?>
                                 <div class="item">
-                                    <img class="slide-image" src="<?= $allItems->attributes[$i]['image'] ?> " alt="">
+                                    <a href="/show?search=<?=$allItems->attributes[$i]['name']?>"><img class="slide-image" src="<?= $allItems->attributes[$i]['image'] ?> " alt=""></a>
+                                    <div class="carousel-caption">
+                                        <h3><?=$allItems->attributes[$i]['name']?></h3>
+                                    </div>
                                 </div>
              <!-- endfor --> <?php }?>
                             </div>
