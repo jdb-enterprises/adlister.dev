@@ -1,4 +1,4 @@
-<!--Page for single advertisement -->
+<!-- Page for single advertisement -->
 <?php
     if (isset($_REQUEST['search'])){
         $item = new Item;
