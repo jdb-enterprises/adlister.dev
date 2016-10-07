@@ -36,7 +36,7 @@ $allItems = $item->all();
                                 <div class="item">
                                     <a href="/show?search=<?=$allItems->attributes[$i]['name']?>"><img class="slide-image" src="<?= $allItems->attributes[$i]['image'] ?> " alt=""></a>
                                     <div class="carousel-caption">
-                                        <h3><?=$allItems->attributes[$i]['name']?></h3>
+                                        <h3><a href="/show?search=<?=$allItems->attributes[$i]['name']?>"><?=$allItems->attributes[$i]['name']?></a></h3>
                                     </div>
                                 </div>
              <!-- endfor --> <?php }?>
