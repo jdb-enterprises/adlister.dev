@@ -57,20 +57,6 @@
   						<br>
  							<input type="file" name="image" id="image-input" accept="image/*">
     				 		<img class="img-thumbnail" id="preview" src="<?= $item->image ?>">
-    				 		
-    				 		<script> 
-    				 			document.getElementById("image-input").onchange = function () {
-								    var reader = new FileReader();
-
-								    reader.onload = function (e) {
-								        // get loaded data and render thumbnail.
-								        document.getElementById("preview").src = e.target.result;
-								    };
-
-								    // read the image file as a data URL.
-								    reader.readAsDataURL(this.files[0]);
-								};
-    				 		</script>
 					</div>
 					
 					<div class="form-group pull-right">

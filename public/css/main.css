@@ -79,6 +79,10 @@ body {
     color: #333;
 }
 
+.create-form {
+	padding-left: 18%;
+}
+
 #logo {
 	width: 15vw;
 	height: 25vh;

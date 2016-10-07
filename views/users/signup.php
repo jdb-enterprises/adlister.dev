@@ -15,14 +15,14 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 	// Add new user. 
 
 		$user = new User;
-		$user->name = Input::get('name');
-		$user->address = Input::get('address');
-		$user->city = Input::get('city');
-		$user->state = Input::get('state');
-		$user->zip_code = Input::get('zip_code');
-		$user->email = Input::get('email');
-		$user->username = Input::get('username');
-		$user->password = Input::get('password');
+		$user->name = Input::escape(Input::get('name'));
+		$user->address = Input::escape(Input::get('address'));
+		$user->city = Input::escape(Input::get('city'));
+		$user->state = Input::escape(Input::get('state'));
+		$user->zip_code = Input::escape(Input::get('zip_code'));
+		$user->email =Input::escape(Input::get('email'));
+		$user->username = Input::escape(Input::get('username'));
+		$user->password = Input::escape(Input::get('password'));
 
 		$user->save();
 
