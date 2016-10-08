@@ -38,24 +38,24 @@
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required" enctype="multipart/form-data" runat="server">
+				<form method="POST" class="itemsForm">
 
 					<div class="form-group">
-						<label class="col-md-4 control-label">Edit Price</label>
-					    <input type="text" pattern="[0-9]*\.[0-9]{2}" class="form-control" id="price" name="price" placeholder="Enter New Price" value="<?= $item->price; ?>" required>
+						<label for="price" class="col-md-4 control-label">Edit Price</label>
+					    <input type="text" class="form-control" id="price" name="price" placeholder="Enter New Price" value="<?= $item->price; ?>" autofocus>
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Name</label>
-					    <input type="text" class="form-control" pattern="[a-zA-Z\s]+" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>" required>
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Enter New Name" value="<?= $item->name; ?>">
 					</div>
 					<div class="form-group">
 						<label class="col-md-4 control-label">Edit Description</label>
-					    <input type="text" class="form-control" id="description" name="description" placeholder="Enter New Description" value="<?= $item->description; ?>" required>
+					    <input type="text" class="form-control" id="description" name="description" placeholder="Enter New Description" value="<?= $item->description; ?>">
 					</div>
 					<div class="form-group well pull-left">
   						<label class="col-md-4 control-label">Upload New Image</label>
   						<br>
- 							<input type="file" name="image" id="image-input" value="<?= $item->image ?>" accept="image/*">
+ 							<input type="file" name="image" id="image-input" accept="image/*">
     				 		<img class="img-thumbnail" id="preview" src="<?= $item->image ?>">
 					</div>
 					

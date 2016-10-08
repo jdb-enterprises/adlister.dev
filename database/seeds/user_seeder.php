@@ -9,7 +9,7 @@ $user->username = "finn_the_human";
 $user->password = $_ENV['USER_PASS'];
 $user->address = '123 BS Ave';
 $user->city = 'San Antonio';
-$user->zip_code = '78015';
+$user->zipcode = '78015';
 $user->state ='TX';
 
 $user->save();
@@ -22,7 +22,7 @@ $user->password = $_ENV['USER_PASS'];
 $user->address = '123 BS Ave';
 $user->city = 'San Antonio';
 $user->state ='TX';
-$user->zip_code = '78015';
+$user->zipcode = '78015';
 $user->save();
 
 $user = new User;
@@ -33,7 +33,7 @@ $user->password = $_ENV['USER_PASS'];
 $user->address = '123 BS Ave';
 $user->city = 'San Antonio';
 $user->state ='TX';
-$user->zip_code = '78015';
+$user->zipcode = '78015';
 $user->save();
 
 $user = new User;
@@ -44,5 +44,5 @@ $user->password = $_ENV['USER_PASS'];
 $user->address = '123 BS Ave';
 $user->city = 'San Antonio';
 $user->state ='TX';
-$user->zip_code = '78015';
+$user->zipcode = '78015';
 $user->save();

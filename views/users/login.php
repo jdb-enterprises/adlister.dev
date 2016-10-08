@@ -23,13 +23,13 @@
 
 				<p>Login with your email/username and password</p>
 
-				<form method="POST" data-validation data-required-message="This field is required">
+				<form method="POST" class="usersForm">
 
 					<div class="form-group">
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Email or Username" data-required>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Email or Username" autofocus>
 					</div>
 					<div class="form-group">
-					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
+					    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
 					</div>
 					<div class="row">
 						<div class="col-sm-6">

@@ -15,7 +15,7 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	  <ul class="nav navbar-nav">
 		<li><a href="/index">View All<span class="sr-only">(current)</span></a></li>
-		<li><a href="#">Link</a></li>
+		
 		<!-- <li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		  <ul class="dropdown-menu">
@@ -30,7 +30,7 @@
 		</li> -->
 	  </ul>
 
-	  <form action="/show" class="navbar-form navbar-right">
+	  <form action="/index" class="navbar-form navbar-right">
 		<div class="form-group">
 		  <input id="search" name="search" type="search" class="form-control" placeholder="Search">
 		</div>
@@ -38,15 +38,17 @@
 	  </form>
 
 	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="/login" type="GET">Login</a></li>
+		<?php if (!isset($_SESSION['IS_LOGGED_IN'])) { ?>
+			<li><a href="/login" type="GET">Login</a></li>
+		<?php } ?>
 		<?php if (isset($_SESSION['IS_LOGGED_IN'])) {?>
 		  <li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=isset($_SESSION['IS_LOGGED_IN'])? "<strong>" . $_SESSION['IS_LOGGED_IN'] . " <i class='fa fa-gear'></i></strong>" : 'Options';?><span class="caret"></span></a>
 			<ul class="dropdown-menu">
 			  <li><a href="/create" type="GET">Create Ad</a></li>
-			  <li><a href="/edit_user" type="GET">Profile</a></li>
+			  <li><a href="/account" type="GET">Profile</a></li>
 			  <li role="separator" class="divider"></li>
-			  <li><a href="/account" type="GET">Account</a></li>
+			  <li><a href="/edit_user" type="GET">Account Settings</a></li>
 			  <li><a href="/logout" type="GET">Logout</a></li>
 			</ul>
 		  </li>

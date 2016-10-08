@@ -1,14 +1,14 @@
 <?php 
 	$user = new User;
 	$user = $user->findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
-	if(isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zip_code'])) {
+	if(isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zipcode'])) {
 	  $user->name = Input::get('name');
 	  $user->email = Input::get('email');
 	  $user->username = Input::get('username');
 	  $user->address = Input::get('address');
 	  $user->city = Input::get('city');
 	  $user->state = Input::get('state');
-	  $user->zip_code = Input::get('zip_code');
+	  $user->zipcode = Input::get('zipcode');
 	  
 	  $user->save();
 	}
@@ -38,27 +38,27 @@
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required">
+				<form method="POST" class="usersForm">
 
 					<div class="form-group">
 						<label for="name">Name</label>
-					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>" data-required>
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>"autofocus>
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
-					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>" data-required>
+					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>">
 					</div>
 					<div class="form-group">
 						<label for="username">Username</label>
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" data-required>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" >
 					</div>
 					<div class="form-group">
 						<label for="address">Street Address</label>
-					    <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= $user->address; ?>" data-required>
+					    <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= $user->address; ?>" >
 					</div>
 					<div class="form-group">
 						<label for="city">City</label>
-					    <input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= $user->city; ?>" data-required>
+					    <input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= $user->city; ?>" >
 					</div>
 					<div class="form-group">
 						
@@ -124,8 +124,8 @@
 					</div>
 					</div>
 					<div class="form-group">
-						<label for="zip_code">Zip Code</label>
-					    <input type="number" class="form-control" id="zip_code" name="zip_code" placeholder="zip_code" value="<?= $user->zip_code; ?>" data-required>
+						<label for="zipcode">Zip Code</label>
+					    <input type="number" class="form-control" id="zipcode" name="zipcode" placeholder="zipcode" value="<?= $user->zipcode; ?>" >
 					</div>
 					<button type="submit" class="btn btn-primary">Update Account</button>
 

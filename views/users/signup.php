@@ -3,7 +3,7 @@
 
 // Add new user.
 
-if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zip_code']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
+if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zipcode']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
 	
 	$userCheck = new User;
 	$username = $userCheck->findByUsernameOrEmail($_REQUEST['username']);
@@ -19,14 +19,14 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 		$user->address = Input::escape(Input::get('address'));
 		$user->city = Input::escape(Input::get('city'));
 		$user->state = Input::escape(Input::get('state'));
-		$user->zip_code = Input::escape(Input::get('zip_code'));
+		$user->zipcode = Input::escape(Input::get('zipcode'));
 		$user->email =Input::escape(Input::get('email'));
 		$user->username = Input::escape(Input::get('username'));
 		$user->password = Input::escape(Input::get('password'));
 
 		$user->save();
 
-		$_SESSION['SUCCESS_MESSAGE'] = 'Success: Please Login!';
+		$_SESSION['SUCCESS_MESSAGE'] = '<a href="/login">Success: Please Login</a>!';
 
     	// sets session variables used for logged in user
 		
@@ -60,36 +60,40 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required">
+				<form method="POST" class="usersForm">
 
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Name</label>
-					    <input type="text" pattern="[a-zA-Z\s]+" class="form-control" id="name" name="name" placeholder="Full Name" required>
+						<label for="name" class="col-sm-2 control-label">Name</label>
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" autofocus>
 					</div>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Email</label>
-					    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+						<label for="email" class="col-sm-2 control-label">Email</label>
+					    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
 					</div>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Username</label>
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+						<label for="username" class="col-sm-2 control-label">Username</label>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
 					</div>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Password</label>
-					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+						<label for="password" class="col-sm-2 control-label">Password</label>
+					    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
 					</div>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Address</label>
-					    <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+						<label for="confirm_password" class="col-sm-2 control-label">Confirm Password</label>
+					    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Password">
 					</div>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">City</label>
-					    <input type="text" pattern="[a-zA-Z\s]+" class="form-control" id="city" name="city" placeholder="City" required>
+						<label for="address" class="col-sm-2 control-label">Address</label>
+					    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+					</div>
+					<div class="form-group">
+						<label for="city" class="col-sm-2 control-label">City</label>
+					    <input type="text" class="form-control" id="city" name="city" placeholder="City">
 					</div>
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="state" name="state" required>
+							<select class="form-control" id="state" name="state">
 								<option value="">N/A</option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
@@ -148,8 +152,8 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 					</div>
 					<br>
 					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">Zip Code</label>
-					    <input type="number" pattern="[0-9]{5}" maxlength="5" class="form-control" id="zip_code" name="zip_code" placeholder="Zip Code" required>
+						<label for="zipcode" class="col-sm-2 control-label">Zip Code</label>
+					    <input type="number" pattern="[0-9]{5}" maxlength="5" class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code">
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
