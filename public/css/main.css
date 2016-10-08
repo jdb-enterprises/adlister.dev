@@ -21,11 +21,7 @@ body {
 	height: 40vh;
 }
 
-#banner {
-	position: relative;
-	right: 35%;
-	height: 100px;
-}
+
 
 .slide-image {
 	max-height: 100%;
