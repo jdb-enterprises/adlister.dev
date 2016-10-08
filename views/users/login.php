@@ -1,9 +1,6 @@
 <div class="container">
-
 	<section id="login">
-
 		<div class="row">
-
 			<h1 class="section-title text-center">Login To JDB</h1>
 
 			<?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
@@ -12,6 +9,7 @@
                 </div>
                 <?php unset($_SESSION['ERROR_MESSAGE']); ?>
             <?php endif; ?>
+
             <?php if (isset($_SESSION['SUCCESS_MESSAGE'])) : ?>
                 <div class="alert alert-success">
                     <p class="success"><?= $_SESSION['SUCCESS_MESSAGE']; ?></p>
@@ -28,9 +26,11 @@
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Email or Username" autofocus>
 					</div>
+
 					<div class="form-group">
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
 					</div>
+
 					<div class="row">
 						<div class="col-sm-6">
 							<button type="submit" class="btn btn-primary">Login</button>
@@ -40,11 +40,7 @@
 						</div>
 					</div>
 				</form>
-
 			</div>
-
-		</div>
-
-	</section>
-
-</div>
+		</div><!-- /.row -->
+	</section><!-- /#login -->
+</div> <!-- /.container -->

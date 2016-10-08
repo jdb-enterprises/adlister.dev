@@ -23,10 +23,8 @@
 		$user->zip_code = Input::get('zip_code');
 		$user->save();
 	}
-
-
-
 ?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-5  toppad  pull-right col-md-offset-3 ">
@@ -101,5 +99,5 @@
 				</div>
 			</div>
 		<?php } ?>
-</div>
+	</div>
 </div>

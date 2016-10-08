@@ -1,6 +1,7 @@
 <?php 
 
 require_once __DIR__ . '/Model.php';
+
 class Item extends Model 
 {
     
@@ -27,7 +28,7 @@ class Item extends Model
         $results = $stmt->fetchall(PDO::FETCH_ASSOC);
 
         // The following code will set the attributes on the calling object based on the result variable's contents
-        
+
         $instance = null;
 
         if ( $results )

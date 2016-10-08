@@ -1,11 +1,16 @@
 $(document).ready(function(){
 
+	// Override Defaults in jQuery plugin
 	$.validator.setDefaults({
 		highlight: function(element) {
+
 			$(element).closest('.form-group').addClass('has-error');
+
 		},
 		unhighlight: function(element) {
+
 			$(element).closest('.form-group').removeClass('has-error');
+
 		},
 		errorElement: 'span',
 		errorClass: 'help-block',
@@ -18,6 +23,7 @@ $(document).ready(function(){
 		}
 	});
 
+	// validates all forms that pertain to the users
 	$(".usersForm").validate({
 		rules: {
 			name: {
@@ -87,6 +93,7 @@ $(document).ready(function(){
 		}
 	});
 
+	// validates all forms that pertain to items
 	$(".itemsForm").validate({
 		rules: {
 			price: {
@@ -116,11 +123,12 @@ $(document).ready(function(){
 		}
 	});
 
+	// Checks password strength 
 	$.validator.addMethod("pwcheck", function(value) {
 	   return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) // consists of only these
-	       && /[a-z]/.test(value) // has a lowercase letter
-	       && /[A-Z]/.test(value) // has a uppercase letter
-	       && /\d/.test(value) // has a digit
+		   && /[a-z]/.test(value) // has a lowercase letter
+		   && /[A-Z]/.test(value) // has a uppercase letter
+		   && /\d/.test(value) // has a digit
 });
 
 });
