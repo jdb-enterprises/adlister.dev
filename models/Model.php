@@ -85,13 +85,13 @@ class Model {
     }
 
     // deletes object from db
-    public function delete()
+    public function delete($id)
     {
 
         $query = 'DELETE FROM ' . static::$table . ' WHERE id = :id';
 
         $stmt = self::$dbc->prepare($query);
-        $stmt->bindValue(':id', $this->attributes['id'], PDO::PARAM_INT);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
     }
 
