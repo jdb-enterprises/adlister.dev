@@ -33,12 +33,13 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
  ?>
 
 <!-- Sign up page -->
-<div class="container">
+<div class="container animated flipInX">
 	<section id="login">
 		<div class="row">
-			<h1 class="section-title text-center">Signup For JDB Membership</h1>
+			<h1 class="section-title text-center">Signup For ADHD.com</h1>
+			<hr>
 
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-6 col-md-offset-3 text-right">
 
 				<p class="text-center">Please fill out the information below so we can create your account.</p>
 
@@ -56,48 +57,41 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 					<?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 				<?php endif; ?>
 
-				<form method="POST" class="usersForm">
+				<form method="POST" class="usersForm forms">
 
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" autofocus>
 					</div>
 
-					<div class="form-group">
-						<label for="email" class="col-sm-2 control-label">Email</label>
+					<div class="form-group row">
 						<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 					</div>
 
-					<div class="form-group">
-						<label for="username" class="col-sm-2 control-label">Username</label>
-						<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+					<div class="form-group row">
+							<input type="text" class="form-control" id="username" name="username" placeholder="Username">
 					</div>
 
-					<div class="form-group">
-						<label for="password" class="col-sm-2 control-label">Password</label>
+					<div class="form-group row">
 						<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 					</div>
 
-					<div class="form-group">
-						<label for="confirm_password" class="col-sm-2 control-label">Confirm Password</label>
-						<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Password">
+					<div class="form-group row">
+						<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
 					</div>
 
-					<div class="form-group">
-						<label for="address" class="col-sm-2 control-label">Address</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="address" name="address" placeholder="Address">
 					</div>
 
-					<div class="form-group">
-						<label for="city" class="col-sm-2 control-label">City</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="city" name="city" placeholder="City">
 					</div>
 
-					<div class="form-group">
-						<label for="state" class="col-sm-2 control-label">State</label>
+					<div class="form-group row">
+						<label for="state" class="col-xs-2 col-form-label">State</label>
 						<div class="col-sm-10">
 							<select class="form-control" id="state" name="state">
-								<option value="">N/A</option>
+								<option value="">Choose</option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
 								<option value="AR">Arkansas</option>
@@ -154,21 +148,15 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['address']) && isset($_REQUEST['
 						</div> <!-- /.col-sm-10 -->
 					</div> <!-- /.form-group -->
 
-					<br>
-
-					<div class="form-group">
-						<label for="zipcode" class="col-sm-2 control-label">Zip Code</label>
-						<input type="number" pattern="[0-9]{5}" maxlength="5" class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code">
+					<div class="form-group row">
+						<input type="number" class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code">
 					</div>
 
-					<div class="row">
-
-						<div class="col-sm-6">
+					<div class="row pull-right">
 							<input type="hidden" name="signup" value="true">
 							<button type="submit" class="btn btn-primary">Signup</button>
-						</div>
 
-						<div class="col-sm-6 text-right">
+						<div class="col-sm-6">
 							<a href="/login" type="GET" class="btn btn-success">Go To Login</a>
 						</div>
 					</div>

@@ -16,8 +16,8 @@ if (isset($_REQUEST['search'])){
 		<?php if (!empty($allItems)) { ?>
 			<?php foreach ($allItems->attributes as $key => $item) { ?>
 
-				<div class="col-sm-4 col-lg-3 col-md-3 box">
-					<div class="thumbnail">
+				<div class="col-sm-4 col-lg-3 col-md-3">
+					<div class="thumbnail box animated">
 						<img class="imgSize" src="<?= $item['image'] ?> ">
 						<div class="caption">
 							<h4 class="pull-right">$<?= $item['price'] ?></h4>

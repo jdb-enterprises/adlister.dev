@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container animated flipInX">
 	<section id="login">
 		<div class="row">
 			<h1 class="section-title text-center">Login To JDB</h1>
@@ -19,7 +19,7 @@
 
 			<div class="col-md-6 col-md-offset-3">
 
-				<p>Login with your email/username and password</p>
+				<p class="text-center">Login with your email/username and password</p>
 
 				<form method="POST" class="usersForm">
 
