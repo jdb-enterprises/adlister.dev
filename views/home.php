@@ -32,8 +32,8 @@ $allItems = $item->all();
 										<h3><a href="/show?search=<?=$item['name']?>"><?=$item['name']?></a></h3>
 									</div>
 								</div>
-							<?php } ?>
-						<?php } ?>
+							<?php } ?> <!-- End If -->
+						<?php } ?> <!-- End Foreach -->
 					</div> <!-- /.carousel-inner -->
 
 					<a class="left carousel-control" href="#image-carousel" data-slide="prev">
