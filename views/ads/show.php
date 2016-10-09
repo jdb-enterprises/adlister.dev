@@ -5,6 +5,9 @@
 	if (isset($_REQUEST['search'])){
 		$item = new Item;
 		$item = $item->searchItems($_REQUEST['search']);
+		$item = $item->attributes[0];
+		$user = new User;
+		$owner = $user->findById($item['user_id']);
 	} else {
 		header( 'Location: /');
 		die;
@@ -14,24 +17,23 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-			<p class="lead">Shop Name</p>
+			<p class="lead">Posted By <b><?= $owner['username']?></b> </p>
 			<div class="list-group">
-				<a href="#" class="list-group-item active">Category 1</a>
-				<a href="#" class="list-group-item">Category 2</a>
-				<a href="#" class="list-group-item">Category 3</a>
+				<a href="#" class="list-group-item">Contact Seller</a>
+				<a href="#" class="list-group-item">Bid Now</a>
 			</div>
 		</div>
 
 		<div class="col-md-9">
-			<div class="thumbnail box">
+			<div class="thumbnail animated box">
 
-				<img class="img-responsive img-thumbnail" src="<?= $item->image ?>" alt="">
+				<img class="img-thumbnail" src="<?=$item['image']?>" alt="">
 
 				<div class="caption-full">
-					<h4 class="pull-right">$<?= $item->price ?></h4>
-					<h4><a href="#"><?= $item->name ?></a>
+					<h4 class="pull-right">$<?= $item['price'] ?></h4>
+					<h4><a href="#"><?= $item['name'] ?></a>
 					</h4>
-					<p><?= $item->description ?></p>
+					<p><?= $item['description'] ?></p>
 				</div>
 
 				<div class="ratings">
@@ -47,7 +49,7 @@
 				</div>
 			</div>
 
-			<div class="well box">
+			<div class="well animated box">
 
 				<div class="text-right">
 					<a class="btn btn-success">Leave a Review</a>
@@ -100,4 +102,4 @@
 			</div> <!-- /.well box -->
 		</div> <!-- /.col-md-9 -->
 	</div> <!-- /.row -->
-</div><!-- /.container
+</div><!-- /.container -->
