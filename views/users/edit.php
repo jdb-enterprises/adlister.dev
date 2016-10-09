@@ -14,10 +14,11 @@
 	}
 ?>
 
-<div class="container">
+<div class="container animated flipInX">
 	<section id="login">
 		<div class="row">
 			<h1 class="section-title text-center">Edit Account</h1>
+			<hr>
 
 			<div class="col-md-6 col-md-offset-3">
 
@@ -37,34 +38,29 @@
 					<?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 				<?php endif; ?>
 
-				<form method="POST" class="usersForm">
+				<form method="POST" class="usersForm forms">
 
-					<div class="form-group">
-						<label for="name">Name</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>"autofocus>
 					</div>
 
-					<div class="form-group">
-						<label for="email">Email</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>">
 					</div>
 
-					<div class="form-group">
-						<label for="username">Username</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" >
 					</div>
 
-					<div class="form-group">
-						<label for="address">Street Address</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= $user->address; ?>" >
 					</div>
 
-					<div class="form-group">
-						<label for="city">City</label>
+					<div class="form-group row">
 						<input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= $user->city; ?>" >
 					</div>
 						
-					<div class="form-group">
+					<div class="form-group row">
 						
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
@@ -126,8 +122,7 @@
 						</div> <!-- /.col-sm-10 -->
 					</div> <!-- /.form-group -->
 					
-					<div class="form-group">
-						<label for="zipcode">Zip Code</label>
+					<div class="form-group row">
 						<input type="number" class="form-control" id="zipcode" name="zipcode" placeholder="zipcode" value="<?= $user->zipcode; ?>" >
 					</div>
 

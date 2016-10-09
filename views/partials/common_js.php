@@ -10,3 +10,5 @@
 <script type="text/javascript" src="/js/create.js"></script>
 <!-- Form Validation -->
 <script type="text/javascript" src="/js/form-validate.js"></script>
+<!-- Animation Trigger -->
+<script type="text/javascript" src="/js/scroll_triggers.js"></script>

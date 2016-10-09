@@ -8,13 +8,19 @@ $allItems = $item->all();
 <!--Page Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
-			<p class="lead"><h3>Hello <?= Input::escape($_SESSION['IS_LOGGED_IN'])?>!</h3></p>
-		</div>
 
+		<?php if (isset($_SESSION['IS_LOGGED_IN'])) {?>
+			<div class="jumbotron text-center animated lightSpeedIn">
+				<p><h1>Hello <?= Input::escape($_SESSION['IS_LOGGED_IN'])?>!</h1></p>
+			</div>
+		<?php }?>
+		<br>
+		<br>
+		<br>
+		<br>
 		<div class="row carousel-holder">
 			<div class="col-md-12">
-				<div id="image-carousel" class="carousel slide box" data-ride="carousel">
+				<div id="image-carousel" class="carousel slide box animated" data-ride="carousel">
 					<div class="carousel-inner">
 
 						<div class="item active">
@@ -56,7 +62,7 @@ $allItems = $item->all();
 		<?php for ($i=0; $i < 3; $i++) { ?>
 
 			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="box thumbnail">
+				<div class="box thumbnail animated">
 
 					<img class="imgSize" src="<?= $allItems->attributes[$i]['image'] ?> " alt="">
 
@@ -77,7 +83,6 @@ $allItems = $item->all();
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</p>
 					</div>
-
 				</div> <!-- /.box thumbnail -->
 			</div> <!-- /.col-sm-4 col-lg-4 col-md-4 -->
 		<?php }?> <!-- End For Loop -->

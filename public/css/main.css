@@ -7,17 +7,21 @@
 body {
 	padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	padding-bottom: 0px;
+	font-family: Avenir;
 }
 
 .page-header{
 	color: white;
 	margin: auto;
 	text-align: right;
-	background-image: url(/img/lightbulb-banner.png);
-	background-size: cover;
+	background-color: #090909;
+	background-image: url(/img/adhd.jpg);
+	background-position: left;
 	background-repeat: no-repeat;
 	height: 40vh;
 }
+
+
 
 .slide-image {
 	max-height: 100%;
@@ -25,7 +29,11 @@ body {
 	margin: auto;
 	
 }
-
+.lightSpeedIn {
+	box-shadow: 0px 0px 100px #888;
+	margin-top: 40px;
+	text-shadow: -5px 5px 10px #999;
+}
 .carousel-holder {
 	margin-bottom: 30px;
 	
@@ -81,9 +89,7 @@ body {
 	color: #333;
 }
 
-.create-form {
-	padding-left: 18%;
-}
+
 .box {
 	box-shadow: 0px 0px 100px #888;
 }
@@ -106,6 +112,32 @@ footer {
 .error {
 	color: red;
 }
+
+.box {
+	visibility: hidden;
+}
+
+.flipInX {
+	padding: 30px;
+	box-shadow: 0px 0px 100px #888;
+	width: 50%;
+	border-radius: 20px;
+}
+
+.forms {
+	width 500px;
+	margin: 50px;
+}
+
+#preview {
+	width: 385px;
+	height: 260px;
+}
+
+.link {
+	border: 1px solid #ccc;
+}
+
 
 /**********/
 /* Footer */

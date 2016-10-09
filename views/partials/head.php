@@ -22,4 +22,6 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css">
 <!-- Favicon -->
 <link rel="icon" href="/img/smiley.ico">
+<!-- Animations -->
+<link rel="stylesheet" type="text/css" href="/css/animate.css">
 
