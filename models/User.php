@@ -48,6 +48,13 @@ class User extends Model {
         return $instance;
     }
 
+    public static function findById($id) 
+    {
+        self::dbConnect();
+        $stmt = self::$dbc->query('SELECT * FROM ' . self::$table . ' WHERE id = ' . $id);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
 
 }
 

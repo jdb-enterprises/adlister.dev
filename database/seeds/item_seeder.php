@@ -97,3 +97,36 @@ $item->description = "Gimme all your teabags! Cooperate, and this Mugga Mug migh
 $item->image = "/img/uploads/mug.jpg";
 $item->user_id = 2;
 $item->save();
+
+$item = new Item;
+$item->price = '3.99';
+$item->name = "BACON LIP BALM";
+$item->description = "The most delicious flavor in the world, exactly where it belongs... in your mouth! This Lip Balm may not stay on your Lips for long but you can always re-apply. It harbors the scent of fresh, smoked, Bacon and will have you constantly craving breakfast. You'll be sniffing the air like the dog from the \"Beggin' Strips\" commercials and there's no shame in that. Bacon holds some crazy power and not many people can explain it, not even Bacon scientists. People bow before Bacon and Bacon controls the masses. Just take a look at the lines outside most buffets... it's all Bacon's fault. Take back some of that power by succumbing to Bacon on your lips. Okay, that doesn't make much sense but either does Bacon Lip Balm.";
+$item->image = "/img/uploads/bacon-balm.jpg";
+$item->user_id = 3;
+$item->save();
+
+$item = new Item;
+$item->price = '499.99';
+$item->name = "DVD Rewinder";
+$item->description = "Times have been tough with the missus recently. We were always fighting about every little thing, who's turn it was to wash the dishes, who was going to mow the lawn, whether or not I was cheating on her with her sister (I was). And on the rare occasion we had the time to watch a movie together we would fight about who would rewind the DVD. My marriage was on the brink of collapse.\nEnter \"DVD Rewinder\"! Rewinding our movies is no longer tedious, but an enjoyable experience to share with my wife. The amazing space age technology works like a charm and DVDs rewind in a matter of minutes, compared to the hours it used to take to manually spin the disc backwards thousands of times.\nSure, sometimes my wife still argues that it makes more sense for me to get a job than for her to get 2 (I mean seriously it averages out to 1 job per person either way, WHAT is the big deal?) but at the end of the day, at least we can watch Glitter without an argument. DVD Rewinder, I owe you my marriage and my life.";
+$item->image = "/img/uploads/dvdrewinder.jpg";
+$item->user_id = 2;
+$item->save();
+
+$item = new Item;
+$item->price = '95950';
+$item->name = "Elephant Camo";
+$item->description = "Learn from the mammoth mistakes of your past and don’t let a lack of subtlety be your downfall. The Proporta Elephant Camouflage Kit uses our patented Clear Blue Sky Disappearing Technology to help you literally vanish into thin air, evading dangerous predators, tourists and boring guests at tea and bun parties. Monsoon-tested waterproof blue and white paint (also available in jungle green)* Includes masking tape (40 metres) Ideal for eavesdropping on rhinos * Don’t be tempted by rival products which use cheaper, water-based paint and can be fatal in crouching-tiger-heavy-rain scenarios. Buy now and get a currant bun absolutely free! Extinction Avoidance – from Proporta “Those who cannot remember the past are condemned to repeat it.” – George Santayana.";
+$item->image = "/img/uploads/elephant-camo.jpg";
+$item->user_id = 1;
+$item->save();
+
+$item = new Item;
+$item->price = '29.99';
+$item->name = "Privacy Scarf";
+$item->description = "Just in case you haven’t come across the Screen Privacy Scarf before and are concerned about nosy bystanders taking a gander at what’s hot on your screen don’t worry! Because you can take comfort in knowing this brainchild invention will keep your data private. The past and future woven into one inconspicuous device by a London based designer means that on the train, around the home or in the work place your display will remain privy. With the Screen Privacy Scarf fashion and technology meet in the middle and the lucky owners will be the envy of any clandestine individual!
+		Different sizes of the scarf are available to cater for mobiles and tablets.";
+$item->image = "/img/uploads/privacy-scarf.jpg";
+$item->user_id = 4;
+$item->save();

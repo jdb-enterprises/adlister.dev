@@ -34,7 +34,7 @@
 			<p class=" text-info"><?= date("Y/m/d h:i:s");?></p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-			<div class="panel panel-info box">
+			<div class="panel panel-info animated box">
 				<div class="panel-heading">
 					<h3 class="panel-title">User: <?=$user->name?></h3>
 				</div>
@@ -78,7 +78,7 @@
 	<div class="row">
 		<?php foreach ($userItems as $key => $item) { ?>
 			<div class="col-sm-4 col-lg-3 col-md-3">
-				<div class="thumbnail box">
+				<div class="thumbnail animated box">
 					<img class="imgSize" src="<?= $item['image'] ?> " alt="">
 					<div class="caption">
 						<h4 class="pull-right">$<?= $item['price'] ?></h4>
