@@ -21,7 +21,7 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" type="text/css" href="/css/main.css">
 <!-- Favicon -->
-<link rel="icon" href="/img/smiley.ico">
+<link rel="icon" href="/img/favicon.ico">
 <!-- Animations -->
 <link rel="stylesheet" type="text/css" href="/css/animate.css">
 
