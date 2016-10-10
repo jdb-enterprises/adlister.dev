@@ -15,7 +15,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/index">View All<span class="sr-only">(current)</span></a></li>
 			</ul>
 
@@ -26,7 +26,7 @@
 				<a  href="/show"><button type="submit" class="btn btn-default">Submit</button></a>
 			</form>
 
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar">
 
 				<!-- Login Button if there is no user logged in -->
 				<?php if (!isset($_SESSION['IS_LOGGED_IN'])) { ?>

@@ -41,31 +41,31 @@
 				<form method="POST" class="usersForm forms">
 
 					<div class="form-group row">
-						<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>"autofocus>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= Input::escape($user->name) ?>"autofocus>
 					</div>
 
 					<div class="form-group row">
-						<input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>">
+						<input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= Input::escape($user->email) ?>">
 					</div>
 
 					<div class="form-group row">
-						<input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" >
+						<input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= Input::escape($user->username) ?>" >
 					</div>
 
 					<div class="form-group row">
-						<input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= $user->address; ?>" >
+						<input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?= Input::escape($user->address) ?>" >
 					</div>
 
 					<div class="form-group row">
-						<input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= $user->city; ?>" >
+						<input type="text" class="form-control" id="city" name="city" placeholder="city" value="<?= Input::escape($user->city) ?>" >
 					</div>
 						
 					<div class="form-group row">
 						
 						<label for="state" class="col-sm-2 control-label">State</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="state" name="state" selected="<?= $user->state; ?>">
-								<option value="<?= $user->state; ?>""><?= $user->state; ?></option>
+							<select class="form-control" id="state" name="state"Input::escape(>
+								<option value="<?= Input::escape($user->state) ?>""><?= Input::escape($user->state) ?></option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
 								<option value="AR">Arkansas</option>
@@ -123,7 +123,7 @@
 					</div> <!-- /.form-group -->
 					
 					<div class="form-group row">
-						<input type="number" class="form-control" id="zipcode" name="zipcode" placeholder="zipcode" value="<?= $user->zipcode; ?>" >
+						<input type="number" class="form-control" id="zipcode" name="zipcode" placeholder="zipcode" value="<?= Input::escape($user->zipcode) ?>" >
 					</div>
 
 					<button type="submit" class="btn btn-primary">Update Account</button>
