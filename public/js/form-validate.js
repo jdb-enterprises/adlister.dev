@@ -129,6 +129,14 @@ $(document).ready(function(){
 		   && /[a-z]/.test(value) // has a lowercase letter
 		   && /[A-Z]/.test(value) // has a uppercase letter
 		   && /\d/.test(value) // has a digit
-});
+	});
+
+	  $("#delete").on("click", function(){
+	  	preventDefault();
+    	if(!confirm("Are you sure you ant to delete this?")) {
+
+	    	window.location.replace("http://adlister.dev/account");    	}
+    });
+
 
 });
