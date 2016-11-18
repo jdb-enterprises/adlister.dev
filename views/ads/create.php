@@ -55,7 +55,7 @@
 					</div>
 			 
 					<div class="form-group row">
-						<textarea id="description" type="text" name="description" class="form-control" placeholder="Description"></textarea>
+						<pre><textarea id="description" type="text" name="description" class="form-control" placeholder="Description"></textarea></pre>
 					</div>
 					
 					<div class="form-group row">

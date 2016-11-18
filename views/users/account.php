@@ -84,7 +84,7 @@
 						<h4 class="pull-right">$<?= $item['price'] ?></h4>
 						<h4><a href="/show?search=<?=$item['name']?>"><?= $item['name'] ?></a></h4>
 						<a href="/edit_ad?search=<?=$item['name']?>"><div class="btn btn-primary"> Edit Item</div></a>
-						<a href="/account?delete=<?=$item['id']?>"><div class="btn btn-danger"> Delete Item</div></a>
+						<a id="deleteBtn" href="/account?delete=<?=$item['id']?>"><div id="delete" class="btn btn-danger"> Delete Item</div></a>
 					<div class="ratings">
 						<p class="pull-right">15 reviews</p>
 						<p>

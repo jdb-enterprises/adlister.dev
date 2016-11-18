@@ -12,6 +12,12 @@ document.getElementById("image-input").onchange = function () {
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
+
+    $('#delete').click(function(){
+    	if(confirm("Are you sure you ant to delete this?")) {
+	    	$("#delete").attr("href", "/account");
+    	}
+    });
 };
 
 })();

@@ -2,13 +2,13 @@
 	$user = new User;
 	$user = $user->findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
 	if(isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['username']) && isset($_REQUEST['address']) && isset($_REQUEST['city']) && isset($_REQUEST['state']) && isset($_REQUEST['zipcode'])) {
-		$user->name = Input::get('name');
-		$user->email = Input::get('email');
-		$user->username = Input::get('username');
-		$user->address = Input::get('address');
-		$user->city = Input::get('city');
-		$user->state = Input::get('state');
-		$user->zipcode = Input::get('zipcode');
+		$user->name = Input::escape(Input::get('name'));
+		$user->email = Input::escape(Input::get('email'));
+		$user->username = Input::escape(Input::get('username'));
+		$user->address = Input::escape(Input::get('address'));
+		$user->city = Input::escape(Input::get('city'));
+		$user->state = Input::escape(Input::get('state'));
+		$user->zipcode = Input::escape(Input::get('zipcode'));
 
 		$user->save();
 	}
@@ -20,7 +20,7 @@
 			<h1 class="section-title text-center">Edit Account</h1>
 			<hr>
 
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-6 col-md-offset-3 animated pulse infinite">
 
 				<p class="text-center">Please fill out the information below so we can update your account.</p>
 
